@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<style>
+/*Formatação do corpo do site*/
+body {
+    background-color: #CAD2C5; 
+    font-family: arial, sans-serif;
+}
+/*Formatação do ícone da aba no cabeçalho*/
+header#cabecalho img#icone {
+    position: relative; 
+    left: 650px;
+    top: -80px;
+    width: 15%;
+    height: 90%;
+}
+/*Configuração da altura máxima do cabeçalho*/
+header#cabecalho {
+    height: 150px;
+}
+/*Formatação da logo "Sonix" no cabeçalho*/
+header#cabecalho img#logo {
+    position: relative;
+    top: -50px;
+    left: -50px;
+    width: 30%;
+    height: 150%;
+}
+/*Formatação da tag h1*/
+h1 {
+    text-align: center;
+    color: #354F52;
+    font-size: 25pt;
+}
+/*Formatação da tag h2*/
+h2 {
+    text-align: center;
+    text-indent: 50px; 
+}
+/*Formatação da tag h3*/
+h3 {
+    color: #52796F;
+}
+/*Formatação do Menu*/
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; 
+    top: 20px;
+    left: 350px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #84A98C;
+    padding: 10px;
+    margin: 2px;
+}
+nav#menu a{
+    color: #2F3E46;
+}
+nav#menu a:hover {
+    color: #ffff;
+}
+/*Formatação da página principal*/
+section#principal img {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    left: 500px;
+}
+/*Formatação do footer*/
+footer#rodape p{
+    text-align: center
+}
+footer#rodape img#logo-if {
+    width: 2%;
+    height: 2%;
+    margin-bottom: -5px;
+}
+/*Formatação do campo de entrada enviar para posicionamento*/
+input#cEnviar {
+    width: 10%;
+    height: 10%;
+    position: relative;
+    left: 1100px;
+}
+</style>
+<body>
+<!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
+<header id = "cabecalho">
+    <img id="logo" src="imagens/icone-sonix.png" alt='imagem da logo escrito Sonix em fundo verde com uma nota musical no meio e ondas sonoras atrás'><!--Primeira imagem solicitada-->
+    <img id="icone" src="imagens/icone-contato.png" alt="imagem de um símbolo retratando a comunicação do desenvolvedor com o meio virtual (usuários)"><!--Segunda imagem solicitada-->
+    <nav id="menu">
+        <ul type="disc"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="estilos.html">Estilos musicais</a></li>
+            <li><a href="midia.html">Multimídia</a></li>
+            <li><a href="contato.html">Fale conosco</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+<hgroup>
+    <font face="Bagaloo"><!--Primeiro título inserido juntamente à formatação de texto (fonte e itálico)-->
+    <h1><i>Contate os desenvolvedores</i></h1>
+    </font>
+
+    <font face="Epilogue"><!--Segundo e terceiro títulos inseridos juntamente à formatação de texto (fonte e sublinhado no h2)-->
+    <h2><u>As informações coletadas pelo formulário serão utilizadas para fins de pesquisa</u></h2>
+    <h3>Preencha o breve questionário abaixo:</h3>
+    </font>
+</hgroup>
+<section id="principal"><!--Essa página tem como intuito principal apresentar um curto formulário visando a interação com o usuário do website-->
+    <form method="post" id="fContato" action="mailto:contato.claudia.com"><!--O email informado é apenas para caráter de preenchimento, portanto, não é necessariamente funcional-->
+        <fieldset id="usuario"><legend>Identificação do Usuário</legend><!--A tag fieldset cria, de certa forma, um campo geral para que sejam inseridos, dentro dele, campos mais específicos. Um fieldset pode se encontrar dentro de outro assim como está o fieldset de Gênero-->
+             <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="50" placeholder="Nome completo"></p>
+             <fieldset id="genero"><legend>Gênero:</legend>
+                 <input type="radio" name="tGen" id="cMasc"><label for="cMasc">Masculino</label><br/>
+                 <input type="radio" name="tGen" id="cFem"><label for="cFem">Feminino</label><br/>
+                 <input type="radio" name="tGen" id="cNb"><label for="cNb">Não-binário</label><br/>
+                 <input type="radio" name="tGen" id="cOutro"><label for="cOutro">Outro</label><br/>
+                 <input type="radio" name="tGen" id="cNão"><label for="cNão">Prefiro não responder</label><br/>
+
+
+             </fieldset>
+             <p><label for="cNasc">Data de Nascimento:</label><input type="date" name="tNasc" id="cNasc"></p>
+         </fieldset>
+     
+         <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+             <p><label for="cEst">Estado:</label><input type="text" name="tEst" id="cEst" maxlength="40" size="30" placeholder="Seu estado"></p>
+             <p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" maxlength="40" size="30" placeholder="Sua cidade"></p> 
+             
+         </fieldset>
+     
+     <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+         <p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua música favorita"></textarea></p>
+     </fieldset>
+
+     <input type="image" name="tEnviar" id= "cEnviar" src="imagens/icone-enviar.png"> <!--Campo de entrada de tipo imagem para inserção do ícone de envio-->
+     </form>
+</section>
+<hr>
+<footer id="rodape">
+    <font face="Times New Roman"> <!--Formatação de texto em HTML-->
+        <p>Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
+    </font>
+    <br/>
+    </footer>
+</body>
+</html>

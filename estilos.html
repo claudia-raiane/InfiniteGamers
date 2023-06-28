@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos musicais</title>
+</head>
+<style>
+/*Formatação do corpo do site*/
+body {
+    background-color: #CAD2C5; 
+    font-family: arial, sans-serif;
+}
+
+header#cabecalho img#icone {
+    position: relative; 
+    left: 630px;
+    top: -80px;
+    width: 20%;
+    height: 95%;
+}
+
+header#cabecalho {
+    height: 150px;
+}
+
+header#cabecalho img#logo {
+    position: relative;
+    top: -50px;
+    left: -50px;
+    width: 30%;
+    height: 150%;
+}
+
+h1 {
+    text-align: center;
+    color: #354F52;
+    font-size: 25pt;
+}
+h2 {
+    text-align: justify;
+    text-indent: 50px; 
+}
+h3 {
+    text-indent: 50px;
+}
+/*Formatação do Menu*/
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; 
+    top: 20px;
+    left: 350px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #84A98C;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu a{
+    color: #2F3E46;
+}
+nav#menu a:hover {
+    color: #ffff;
+}
+
+/*formatação da página principal*/
+section#principal img {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    left: 500px;
+}
+
+/*Formatação do footer*/
+footer#rodape p{
+    text-align: center
+}
+
+footer#rodape img#logo-if {
+    width: 2%;
+    height: 2%;
+    margin-bottom: -5px;
+}
+
+/*Formatação da tabela*/
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color:  #84A98C;
+    vertical-align: center;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color:  #84A98C;
+    color: #354F52;
+    font-weight: bold;
+}
+
+table#tabelaspec caption {
+    color: #2F3E46 ;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #354F52;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+</style>
+<body>
+<!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
+<header id = "cabecalho">
+    <img id="logo" src="imagens/icone-sonix.png"  alt='imagem da logo escrito Sonix em fundo verde com uma nota musical no meio e ondas sonoras atrás'><!--Primeira imagem solicitada-->
+    <img id="icone" src="imagens/icone-estilos.png" alt="imagem de um disco musical referenciando os mais diversos estilos de música"><!--Segunda imagem solicitada-->
+    <nav id="menu"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
+        <ul type="disc">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="estilos.html">Estilos musicais</a></li>
+            <li><a href="midia.html">Multimídia</a></li>
+            <li><a href="contato.html">Fale conosco</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+<!--Para inserir o conteúdo principal, foi criada a tag section-->
+<section id="principal">
+<!--Essa página tem como intuito principal apresentar um pouco sobre os diferentes estilos musicais e evidenciar, por meio do uso de uma tabela, a predominância dos gêneros mais ouvidos em todo o mundo discutidos-->
+<font face="Boogaloo"><!--Primeiro título inserido juntamente a 3 formatações de texto (fonte e itálico)-->
+    <h1><i>Alguns dos estilos musicais mais populares e amplamente ouvidos em todo o mundo incluem o pop, o hip-hop/rap, o rock e a música eletrônica.</i></h1>
+</font>
+
+<font face="Epilogue"><!--Segundo título inserido juntamente à alteração na fonte-->
+    <h2>Assim como é possível observar na tabela abaixo, o Rock surgiu e se firmou nos Estados Unidos durante a década de 50, tendo rapidamente se espalhado por todo o mundo. Sua história começou com a influência cultural da música dos escravos vindos da África, na sociedade norte-americana como forma de expressão cultural e artística alcançando grandes proporções.</h2>
+</font>
+
+<!--Inserção da tabela com o ranking de músicas muito escutadas de acordo com a época-->
+<table id="tabelaspec">  
+    <caption>Tabela com músicas que tiveram grande sucesso<span>Jun/2023</span></caption>
+    <tr><td rowspan='5' class="ce">Década de 1960</td><td class="cd">"Hey Jude" - The Beatles (1968)</td></tr>
+    <tr><td class="cd">"Like a Rolling Stone" - Bob Dylan (1965)</td></tr>
+    <tr><td class="cd">"Respect" - Aretha Franklin (1967)</td></tr>
+    <tr><td class="cd">"I Want to Hold Your Hand" - The Beatles (1963)</td></tr>
+    <tr><td class="cd">"Good Vibrations" - The Beach Boys (1966)</td></tr>
+    <tr><td rowspan='5' class="ce">Década de 1970</td><td class="cd">"Stayin' Alive" - Bee Gees (1977)</td></tr>
+    <tr><td class="cd">"Bohemian Rhapsody" - Queen (1975)</td></tr>
+    <tr><td class="cd">"Hotel California" - Eagles (1976)</td></tr>
+    <tr><td class="cd">"Stairway to Heaven" - Led Zeppelin (1971)</td></tr>
+    <tr><td class="cd">"Imagine" - John Lennon (1971)</td></tr>
+    <tr><td rowspan="5" class="ce">Década de 1980</td><td class="cd">"Billie Jean" - Michael Jackson (1982)</td></tr>
+    <tr><td class="cd">"Like a Virgin" - Madonna (1984)</td></tr>
+    <tr><td class="cd">"Sweet Child o' Mine" - Guns N' Roses (1987)</td></tr>
+    <tr><td class="cd">"Every Breath You Take" - The Police (1983)</td></tr>
+    <tr><td class="cd">"Livin' on a Prayer" - Bon Jovi (1986)</td></tr>
+    <tr><td rowspan="5" class="ce">Década de 1990</td><td class="cd">"Smells Like Teen Spirit" - Nirvana (1991)</td></tr>
+    <tr><td class="cd">"Baby One More Time" - Britney Spears (1998)</td></tr>
+    <tr><td class="cd">"Wonderwall" - Oasis (1995)</td></tr>
+    <tr><td class="cd">"No Rain" - Blind Melon (1992)</td></tr>
+    <tr><td class="cd">"Black Hole Sun" - Soundgarden (1994)</td></tr>
+    <tr><td rowspan='5' class="ce">Década de 2000</td><td class="cd">"Hey Ya!" - OutKast (2003)</td></tr>
+    <tr><td class="cd">"Crazy in Love" - Beyoncé ft. Jay-Z (2003)</td></tr>
+    <tr><td class="cd">"Mr. Brightside" - The Killers (2004)</td></tr>
+    <tr><td class="cd">"Hot in Herre" - Nelly (2002)</td></tr>
+    <tr><td class="cd">"Clocks" - Coldplay (2002)</td></tr>
+    </table>
+
+<font face="Epilogue">   <!--Terceiro título inserido juntamente à alteração na fonte e texto marcado-->
+    <h3>A banda de rock "The Beatles" está presente na tabela com duas de suas músicas. Formado por quatro jovens de Liverpool, o grupo mudou o comportamento dos cantores dentro e fora do palco, revolucionando os conceitos dos discos, apresentações, moda e composições e fazendo que os nomes de seus integrantes jamais fossem esquecidos: <mark>John Lennon, Paul McCartney, George Harrison e Ringo Starr.</mark></h3>
+</font>
+
+</section>
+<hr>
+<footer id="rodape">
+    <font face="Times New Roman"> <!--Formatação de texto em HTML-->
+        <p>Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
+    </font>
+    <br/>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+</head>
+<style>
+/*Formatação do corpo do site*/
+body {
+    background-color: #CAD2C5; 
+    font-family: arial, sans-serif;
+}
+/*Formatação da imagem da aba no cabeçalho*/
+header#cabecalho img#icone {
+    position: relative; 
+    left: 580px;
+    top: -100px;
+    width: 25%;
+    height: 70%;
+}
+/*Formatação configurando a altura máxima do cabeçalho*/
+header#cabecalho {
+    height: 150px;
+}
+/*Formatação da logo "Sonix" no canto esquerdo*/
+header#cabecalho img#logo {
+    position: relative;
+    top: -50px;
+    left: -50px;
+    width: 30%;
+    height: 150%;
+}
+/*Formatação da tag p*/
+p {
+    text-align: justify; 
+    text-indent: 50px;
+}
+/*Formatação da tag h1*/
+h1 {
+    text-align: center;
+    color: #2F3E46;
+    font-size: 25pt;
+}
+/*Formatação da tag h2*/
+h2 {
+    text-align: justify;
+    text-indent: 50px; 
+}
+/*Formatação da tag h3*/
+h3 {
+    color: #52796F;
+}
+/*Formatação do Menu*/
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; 
+    top: 20px;
+    left: 350px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #84A98C;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu a{
+    color: #2F3E46;
+}
+nav#menu a:hover {
+    color: #ffff;
+}
+
+/*Formatação da imagem na página principal*/
+section#principal img {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    left: 500px;
+}
+
+/*Formatação do footer*/
+footer#rodape p{
+    text-align: center
+}
+
+footer#rodape img#logo-if {
+    width: 2%;
+    height: 2%;
+    margin-bottom: -5px;
+}
+</style>
+
+<body>
+<!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
+    <header id = "cabecalho">
+        <img id="logo" src="imagens/icone-sonix.png"  alt='imagem da logo escrito Sonix em fundo verde com uma nota musical no meio e ondas sonoras atrás'><!--Primeira imagem solicitada-->
+        <img id="icone" src="imagens/icone-lupa.png" alt="imagem de uma lupa remetendo à 'busca'"><!--Segunda imagem solicitada-->
+        <nav id="menu"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
+            <ul type="disc">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="estilos.html">Estilos musicais</a></li>
+                <li><a href="midia.html">Multimídia</a></li>
+                <li><a href="contato.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+<hr>
+<!--Para inserir o conteúdo principal, foi criada a tag section-->
+    <section id="principal"><!--Essa página tem como intuito principal apresentar um pouco sobre a origem do website e sua nomenclatura e as contribuintes nesse projeto-->
+
+        <font face="Boogaloo"><!--Primeiro título inserido-->
+        <h1><i>Sobre a origem do Website</i></h1><!--Tag de formatação de texto para itálico e mudança da fonte-->
+        </font>
+
+        <img id='sonix' src="imagens/icone-sonix.png" alt='ícone do website "Sonix"'><!--Terceira imagem solicitada contendo a logo do website-->
+
+        <h2>A nomenclatura dada para o website foi "SONIX" - Soundtracks, Originals, and New Inspiring eXperience. A sigla é inspirada na palavra "sonix" a qual <mark>expressa uma combinação das palavras "sound" (som) e "sonic" (sonoro)</mark>, transmitindo a ideia de uma experiência musical envolvente e inspiradora.</h2><!--Tag de formatação de texto para marcado e acréscimo de título-->
+
+        <h1><i>Sobre as contribuintes do projeto</i></h1>
+        <br><img id='clara' src='imagens/foto-clara.jpeg' alt="foto da contribuinte Ana Clara em preto e branco"><br><br>
+
+        <p>Oioi, me chamo Clara, tenho 19 anos, estou no 3º ano do Ensino Médio, no curso de Informática do IFRN-Mo. A música está presente em todos os momentos da minha vida, posso dizer que sem música eu não sou ninguém. Eu sou uma pessoa muito eclética quando se trata de música, sendo os meus estilos favoritos: forró, brega funk, flashback, indie, pop, MPB entre outros. Meus artistas e bandas favoritas são muitas, porém tem algumas que moram no meu coração. Doja Cat, Jão, Carol Biazin, Grafith, Shevchenko Elloco, Lana Del Rey, Magníficos, Mari Fernandez são um dos que fazem parte da minha playlist, não importa a hora e nem o momento do dia. Elas me salvam muito, e  também fazem parte dos momentos que eu estou triste, com raiva, etc. </p>
+        <h3><u>Gêneros favoritos:</u></h3><!--Formatação para sublinhado-->
+        <ul><strong><!--Formatação para negrito-->
+            <li>Forró</li>
+            <li>Brega funk</li>
+            <li>Flashback</li>
+            <li>Indie</li>
+            <li>Pop</li>
+        </ul></strong>
+        <h3><u>Artistas favoritos:</u></h3>
+        <ol><strong>
+            <li>Doja Cat</li>
+            <li>Jão</li>
+            <li>Carol Biazin</li>
+            <li>Grafith</li>
+            <li>Lana Del Rey</li>
+        </ol></strong>
+        <br><br>
+        <img id='cecii' src= 'imagens/foto-cecii.jpeg'> <br><br>
+        <p>Oi! Eu me chamo Cecília, tenho 16 anos e atualmente curso o 3º ano do ensino médio, junto com o curso de informática - IFRN (Mossoró). Amo música, é uma das minhas válvulas de escape. Meu gosto musical é bem eclético, MPB, internacionais - como: k-pop/j-pop, rock, arctic monkeys, cazuza, stacey ryan, jvke etc. Tanto “calminhas” quanto agitadas, meu gosto é entre esses extremos. </p>
+        <h3><u>Gêneros favoritos:</u></h3>
+        <ul><strong>
+            <li>MPB</li>
+            <li>K-pop</li>
+            <li>J-pop</li>
+            <li>Rock</li>
+            <li>Indie</li>
+        </ul></strong>
+        <h3><u>Artistas favoritos:</u></h3>
+        <ol><strong>
+            <li>Arctic Monkeys</li>
+            <li>Cazuza</li>
+            <li>Stacey Ryan</li>
+            <li>Jvke</li>
+            <li>Taylor Swift</li>
+        </ol></strong>
+        <br><br>
+        <img id='clau' src= 'imagens/foto-clau.jpeg'> <br> <br>
+        <p>Olá, me chamo Cláudia (Clau para os mais próximos), tenho 18 anos e curso o 3º ano do ensino médio com curso técnico integrado em Informática no IFRN-MO. Minha experiência com o ramo da música já é algo vindo de muitos anos visto que é algo que sempre esteve bastante presente em minha vida seja apenas como forma de passar o tempo ou como maneira de me expressar (dançando ou cantando). Por fim, pude perceber que meu gosto musical tornou-se muito eclético, sendo assim, escuto os mais diversos estilos musicais e artistas. Alguns gêneros de minha preferência são: MPB, Indie, Pop e Rock. Além disso, alguns artistas que mais escuto são: Jão, Taylor Swift, The Neighbourhood, Chase Atlantic e Anavitória. </p>
+        <h3><u>Gêneros favoritos:</u></h3>
+        <ul><strong>
+            <li>MPB</li>
+            <li>Indie</li>
+            <li>Pop</li>
+            <li>Rock</li>
+            <li>K-pop</li>
+        </ul></strong>
+        <h3><u>Artistas favoritos:</u></h3>
+        <ol><strong>
+            <li>Jão</li>
+            <li>Taylor Swift</li>
+            <li>The neighbourhood</li>
+            <li>Chase Atlantic</li>
+            <li>Anavitória</li>
+        </ol></strong>
+    </section>
+    <br>
+<hr>
+<footer id="rodape">
+    <font face="Times New Roman"> <!--Formatação de texto em HTML-->
+        <p>Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
+    </font>
+    </footer>
+</body>
+</html>
