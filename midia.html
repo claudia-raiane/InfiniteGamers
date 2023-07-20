@@ -7,39 +7,149 @@
     <title>Multimídia</title>
 </head>
 <style>
-/*Formatação do corpo do site*/
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("fontes/bubblegum-sans-regular.otf")
+}
+
 body {
-    background-color: #CAD2C5; 
+    background-color:#CAD2C5;
+    color: rgba(0,0,0 1); 
     font-family: arial, sans-serif;
 }
-/*Formatação do ícone da aba no cabeçalho*/
-header#cabecalho img#icone {
-    position: relative; 
-    left: 600px;
-    top: -80px;
-    width: 20%;
-    height: 100%;
+
+/*Estilização para os parágrafos da página*/
+p {
+    text-align: justify; 
+    text-indent: 50px;
+    font-weight: bold;
 }
-/*Configuração da altura máxima do cabeçalho*/
+
+img#logo {
+    margin-top: -40px;
+    width: 20%;
+    height: 140%;
+}
+
+div#interface {
+    width: 1000px;
+    margin: -10px auto 0px auto;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 15px;
+}
+
+header#cabecalho img#icone {
+    position: absolute; 
+    height: 20%;
+    width: 20%;
+    left: 840px;
+    top: -40px;
+}
+
 header#cabecalho {
     height: 150px;
+    border-bottom: 1px solid #606060;
 }
-/*Formatação da logo "Sonix" no cabeçalho*/
-header#cabecalho img#logo {
-    position: relative;
-    top: -50px;
-    left: -50px;
-    width: 30%;
-    height: 150%;
+
+h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30px;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 20px;
+    margin-bottom: 0px;
+    text-align: center;
 }
+
+h3 {
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+/*Formatação do Menu*/
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; 
+    top: 40px;
+    left: 200px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #84A98C;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu li:hover {
+    background-color: #52796F;
+    text-decoration: underline;
+}
+nav#menu h1{
+    display: none
+}
+nav#menu a{
+    color: #2F3E46;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: #ffff;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #354F52;
+    background-color: #CAD2C5;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape img#logo-if {
+    width: 2%;
+    height: 2%;
+    margin-bottom: -5px;
+}    
+
+
 /*Formatação da seção para inclusão da imagem de fundo*/
 section#tv-radio {
     position: relative;
-    left: 150px;
+    left: 50px;
     width: 900px;
     height: 570px;
     background: url('imagens/radio-tv.png') no-repeat;
+    padding-bottom: 10px;
 }
+
 /*Formatação do bloco de áudio para posicionamento dentro da imagem*/
 audio#musica {
     display: block;
@@ -48,6 +158,7 @@ audio#musica {
     top: 490px;
     width: 300px;
 }
+
 /*Formatação do vídeo para posicionamento dentro da imagem*/
 video#filme {
     display: block;
@@ -55,49 +166,6 @@ video#filme {
     left: 90px;
     top: 80px;
     width: 440px;
-}
-/*Formatação da tag h1*/
-h1 {
-    text-align: center;
-    color: #354F52;
-    font-size: 25pt;
-}
-/*Formatação da tag h2*/
-h2 {
-    text-align: justify;
-    color: #52796F;
-}
-/*Formatação da tag h3*/
-h3 {
-    color: #52796F;
-}
-/*Formatação da tag h4*/
-h4 {
-    color: #2F3E46;
-    text-indent: 50px;
-    text-align: justify;
-    font-size: 14pt;
-}
-/*Formatação do Menu*/
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute; 
-    top: 20px;
-    left: 350px;
-}
-nav#menu li {
-    display: inline-block;
-    background-color: #84A98C;
-    padding: 10px;
-    margin: 2px;
-}
-
-nav#menu a{
-    color: #2F3E46;
-}
-nav#menu a:hover {
-    color: #ffff;
 }
 
 /*Formatação da imagem na página principal*/
@@ -108,18 +176,9 @@ section#principal img {
     left: 500px;
 }
 
-/*Formatação do footer*/
-footer#rodape p{
-    text-align: center
-}
-
-footer#rodape img#logo-if {
-    width: 2%;
-    height: 2%;
-    margin-bottom: -5px;
-}
 </style>
 <body>
+<div id="interface">
 <!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
 <header id = "cabecalho">
     <img id="logo" src="imagens/icone-sonix.png" alt='imagem da logo escrito Sonix em fundo verde com uma nota musical no meio e ondas sonoras atrás'><!--Primeira imagem solicitada-->
@@ -134,24 +193,18 @@ footer#rodape img#logo-if {
         </ul>
     </nav>
 </header>
-<hr>
 <header id="cabecalho-artigo"><!--Essa página tem como intuito principal apresentar uma exemplificação de diferentes estilos musicais e a influência da localização do artista na música a qual ele produz-->
     <hgroup>
-        <font face="Boogaloo"><!--Primeiro título inserido juntamente a 3 formatações de texto (fonte e itálico)-->
+        <!--Primeiro título inserido juntamente a 3 formatações de texto (fonte e itálico)-->
         <h1><i>Artista potiguar X Artista sul-coreano</i></h1>
-        </font>
 
-        <font face="Epilogue"><!--Segundo título inserido juntamente à alteração na fonte-->
-        <h2>Exemplo local e internacional</h2>
-        
         <!--Terceiro título inserido com a formatação de texto "mark"-->
-        <h3>Atualizado em 06/06/2023 | No vídeo: o clipe "Gangnam Style" do artista <mark>PSY</mark> e, no áudio, o artista <mark>Dorgival Dantas</mark> com sua música "Destá".</h3>
+        <h3><i>Atualizado em 06/06/2023 | No vídeo: o clipe "Gangnam Style" do artista <mark>PSY</mark> e, no áudio, o artista <mark>Dorgival Dantas</mark> com sua música "Destá".</i></h3>
 
         <!--Quarto título na hierarquia inserido-->
-        <h4>Durante muito tempo Gangnam Style manteve o posicionamento de vídeo mais assistido do YouTube desde seu ano de lançamento, a história dessa música, um fenômeno da cultura pop que foi o primeiro single do artista PSY, faz referência a um subúrbio chique da Coreia do Sul, localizado perto da capital do país, Seul. A canção fala sobre o estilo de vida dessa região, fazendo uma sátira à cultura do consumismo e à forma como as pessoas vivem de aparências, em busca de status social.</h4>
-        <h4>Dorgival Dantas, conhecido como "O Poeta", cantor natural de Olho-d'água do Borges | Rio Grande do Norte já soma mais de 30 anos em sua carreira musical e destaca-se, principalmente, no período de festas juninas sendo bastante requisitado com o seu gênero principal: o forró. 
-        </h4>
-        </font>
+        <p>Durante muito tempo Gangnam Style manteve o posicionamento de vídeo mais assistido do YouTube desde seu ano de lançamento, a história dessa música, um fenômeno da cultura pop que foi o primeiro single do artista PSY, faz referência a um subúrbio chique da Coreia do Sul, localizado perto da capital do país, Seul. A canção fala sobre o estilo de vida dessa região, fazendo uma sátira à cultura do consumismo e à forma como as pessoas vivem de aparências, em busca de status social.</p>
+        <p>Dorgival Dantas, conhecido como "O Poeta", cantor natural de Olho-d'água do Borges | Rio Grande do Norte já soma mais de 30 anos em sua carreira musical e destaca-se, principalmente, no período de festas juninas sendo bastante requisitado com o seu gênero principal: o forró. 
+        </p>
     </hgroup>
 </header>
 <!--Para inserir o conteúdo principal, foi criada a tag section-->
@@ -167,12 +220,10 @@ footer#rodape img#logo-if {
         Desculpe, mas não foi possível carregar o vídeo.
     </video>
 </section>
-<hr>
 <footer id="rodape">
-    <font face="Times New Roman"> <!--Formatação de texto em HTML-->
-        <p>Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
-    </font>
-    <br/>
-    </footer>
+    <!--Formatação de texto em HTML-->
+    <p style="text-align: center; font-weight: normal;">Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
+</footer>
+</div>
 </body>
 </html>

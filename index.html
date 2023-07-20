@@ -14,97 +14,166 @@ verde escuro -> #2F3E46
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonix</title>
+    <style> 
+        @font-face {
+            font-family: 'FonteLogo';
+            src: url("fontes/bubblegum-sans-regular.otf")
+        }
+
+        body {
+            background-color:#CAD2C5;
+            color: rgba(0,0,0 1); 
+            font-family: arial, sans-serif;
+        }
+
+        /*Estilização para os parágrafos da página*/
+        p {
+            text-align: justify; 
+            text-indent: 50px;
+            font-weight: bold;
+        }
+
+        img#logo {
+            margin-top: -40px;
+            width: 20%;
+            height: 140%;
+        }
+
+        div#interface {
+            width: 1000px;
+            margin: -10px auto 0px auto;
+            background-color: white;
+            position: relative;
+            box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+            padding: 15px;
+        }
+
+        header#cabecalho img#icone {
+            position: absolute; 
+            height: 20%;
+            width: 50%;
+            left: 880px;
+            top: -10px;
+        }
+
+        header#cabecalho {
+            height: 150px;
+            border-bottom: 1px solid #606060;
+        }
+
+        h1 {
+            font-family: 'FonteLogo', sans-serif;
+            font-size: 30px;
+            color: #000;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+            padding: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        /*Formatação do Menu*/
+        nav#menu {
+            display: block;
+        }
+        nav#menu ul {
+            list-style: none;
+            text-transform: uppercase;
+            position: absolute; 
+            top: 40px;
+            left: 200px;
+        }
+        nav#menu li {
+            display: inline-block;
+            background-color: #84A98C;
+            padding: 10px;
+            margin: 2px;
+            transition: background-color 1s;
+        }
+        nav#menu li:hover {
+            background-color: #52796F;
+            text-decoration: underline;
+        }
+        nav#menu h1{
+            display: none
+        }
+        nav#menu a{
+            color: #2F3E46;
+            text-decoration: none;
+        }
+        nav#menu a:hover {
+            color: #ffff;
+        }
+
+        a {
+            color: #606060;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section#corpo {
+            display: block; 
+            width: 550px;
+            float: left;
+            border-right: 1px solid #606060;
+            padding-right: 15px;
+        }
+        article#noticia-principal h2 {
+            font-size: 13pt;
+            color: #354F52;
+            background-color: #CAD2C5;
+            padding: 5px 0px 5px 10px;
+            margin: 10px 0px 10px 0px;
+        }
+
+        header#cabecalho-artigo h1 {
+            font-family: 'FonteLogo', sans-serif;
+            font-size: 20pt;
+            color: #606060;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        aside#lateral {
+            display: block;
+            width: 400px;
+            float: right;
+            background-color: #CAD2C5;
+            padding: 10px;
+            margin-top: 10px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+        }
+
+        aside#lateral h1 {
+            font-family: 'FonteLogo', sans-serif;
+            font-size: 20pt;
+            color: #606060;
+            margin-top: 0px;
+        }
+
+        aside#lateral h2 {
+            background-color: #84A98C;
+            font-size: 13pt;
+            color: #ffffff;
+            padding: 5px;
+        }
+
+        footer#rodape {
+            clear: both;
+            border-top: 1px solid #606060;
+        }
+
+        footer#rodape img#logo-if {
+            width: 2%;
+            height: 2%;
+            margin-bottom: -5px;
+        }    
+    </style>
 </head>
-<style>
-/*Formatação do corpo do site*/
-body {
-    background-color: #CAD2C5; 
-    font-family: arial, sans-serif;
-}
-/*Formatação do ícone em cada aba*/
-header#cabecalho img#icone {
-    position: relative; 
-    left: 600px;
-    top: -80px;
-    width: 23%;
-    height: 100%;
-}
-/*Formatação que define a altura máxima do cabeçalho*/
-header#cabecalho {
-    height: 150px;
-}
-/*Formatação da logo "Sonix" no canto esquerdo*/
-header#cabecalho img#logo {
-    position: relative;
-    top: -50px;
-    left: -50px;
-    width: 30%;
-    height: 150%;
-}
-/*Estilização para os parágrafos da página*/
-p {
-    text-align: justify; 
-    text-indent: 50px;
-}
-/*Estilização para a tag h1*/
-h1 {
-    text-align: center;
-    color: #2F3E46;
-    font-size: 25pt;
-}
-/*Estilização para a tag h2*/
-h2 {
-    text-align: justify; 
-    color: #354F52;
-}
-/*Estilização para a tag h4*/
-h4 {
-    text-align: justify;
-    text-indent: 50px;
-}
-/*Formatação do Menu*/
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute; 
-    top: 20px;
-    left: 350px;
-}
-nav#menu li {
-    display: inline-block;
-    background-color: #84A98C;
-    padding: 10px;
-    margin: 2px;
-}
-
-nav#menu a{
-    color: #2F3E46;
-}
-nav#menu a:hover {
-    color: #ffff;
-}
-
-/*Formatação da imagem na página principal*/
-section#principal img {
-    width: 20%;
-    height: 20%;
-    position: relative;
-    left: 500px;
-}
-
-/*Formatação do footer*/
-footer#rodape p{
-    text-align: center
-}
-
-footer#rodape img#logo-if {
-    width: 2%;
-    height: 2%;
-    margin-bottom: -5px;
-}
-</style>
-
 <body>
+<div id="interface">
 <!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
 <header id = "cabecalho">
     <img id="logo" src="imagens/icone-sonix.png" alt='imagem da logo escrito Sonix em fundo verde com uma nota musical no meio e ondas sonoras atrás'> <!--Primeira imagem solicitada-->
@@ -119,32 +188,33 @@ footer#rodape img#logo-if {
         </ul>
     </nav>
 </header>
-<hr>
-
+<section id='corpo'>
+<article id="noticia-principal">
 <!--Para inserir o conteúdo principal, foi criada a tag section-->
-<section id="corpo">
 <!--Essa página tem como intuito principal apresentar conceitos básicos sobre a temática do website: a música-->
-<font face="Boogaloo">
-<h1><!--Tag de formatação de texto para itálico e mudança da fonte--><i>Saiba tudo sobre o mundo musical!</i></h1><!--Primeiro título inserido--></font>
-<font face="Epilogue">
-<h2><!--Segunda formatação de texto--><u>➞ Mas afinal...O que é a música?</u></h2><!--Segunda formatação de título--></font>
-<h4>Música é a combinação de ritmo, harmonia e melodia, de maneira agradável ao ouvido. No sentido amplo é a organização temporal de sons e silêncios (pausas). No sentido restrito, é a arte de coordenar e transmitir efeitos sonoros, harmoniosos e esteticamente válidos, podendo ser transmitida através da voz ou de instrumentos musicais.</h4><!--Terceira formatação de título-->
-<img src="imagens/icone-emoji.png" alt="emoji de whatsapp pensando"><!--Terceira imagem solicitada-->
+<h1><!--Tag de formatação de texto para itálico e mudança da fonte--><i>Saiba tudo sobre o mundo musical!</i></h1><!--Primeiro título inserido-->
+
+<h2><!--Segunda formatação de texto--><u>➞ Mas afinal...O que é a música?</u></h2><!--Segunda formatação de título-->
+<p>Música é a combinação de ritmo, harmonia e melodia, de maneira agradável ao ouvido. No sentido amplo é a organização temporal de sons e silêncios (pausas). No sentido restrito, é a arte de coordenar e transmitir efeitos sonoros, harmoniosos e esteticamente válidos, podendo ser transmitida através da voz ou de instrumentos musicais.</p><!--Terceira formatação de título-->
+<img src="imagens/icone-emoji.png" alt="emoji de whatsapp pensando" style="height: 50%;width: 50%; margin-left: 120px;"><!--Terceira imagem solicitada-->
 <br>
-<font face="Epilogue">
-<h2><u>➞ A origem da música</u></h2><!--Formatação de título e texto--></font>
-<h4>A música existe e sempre existiu como produção cultural, pois de acordo com estudos científicos, desde que o ser humano começou a se organizar em tribos primitivas pela África, a música era parte integrante do cotidiano dessas pessoas. Acredita-se que a música tenha surgido há 50.000 anos, onde as primeiras manifestações tenham sido feitas no continente africano, expandindo-se pelo mundo com o dispersar da raça humana pelo planeta. A música, ao ser produzida e/ou reproduzida, é influenciada diretamente pela organização sociocultural e econômica local, contando ainda com as características climáticas e o acesso tecnológico que envolvem toda a relação com a linguagem musical. A música possui a capacidade estética de traduzir os sentimentos, atitudes e valores culturais de um povo ou nação. A música é uma linguagem local e global.</h4><!--Formatação de título-->
+
+<h2><u>➞ A origem da música</u></h2><!--Formatação de título e texto-->
+<p>A música existe e sempre existiu como produção cultural, pois de acordo com estudos científicos, desde que o ser humano começou a se organizar em tribos primitivas pela África, a música era parte integrante do cotidiano dessas pessoas. Acredita-se que a música tenha surgido há 50.000 anos, onde as primeiras manifestações tenham sido feitas no continente africano, expandindo-se pelo mundo com o dispersar da raça humana pelo planeta. A música, ao ser produzida e/ou reproduzida, é influenciada diretamente pela organização sociocultural e econômica local, contando ainda com as características climáticas e o acesso tecnológico que envolvem toda a relação com a linguagem musical. A música possui a capacidade estética de traduzir os sentimentos, atitudes e valores culturais de um povo ou nação. A música é uma linguagem local e global.</p>
 <br>
-<font face="Epilogue">
-<h2><u>➞ A música na contemporaneidade</u></h2><!--Formatação de título e texto--></font>
-<h4>O século XX é marcado por uma série de novas tendências e técnicas musicais, no entanto torna-se imprudente rotular criações que ainda encontra-se em curso. Porém algumas tendências e técnicas importantes já se estabeleceram no decorrer do século XX. São elas: Impressionismo, Nacionalismo do século XX, Influências jazzísticas, Politonalidade, Atonalidade, Expressionismo, Pontilhismo, Serialismo, Neoclassicismo, Microtonalidade, Música concreta, Música eletrônica, Serialismo total, e Música Aleatória. Isto sem contar na especificidade de cada cultura. Há também os músicos que criaram um estilo característico e pessoal, não se inserindo em classificações ou rótulos, restando-lhes apenas o adicional “tradicionalista”.</h4><!--Formatação de título-->
-<hr>
+</article>
+</section>
+
+<aside id="lateral">
+<h2><u>➞ A música na contemporaneidade</u></h2><!--Formatação de título e texto-->
+<p>O século XX é marcado por uma série de novas tendências e técnicas musicais, no entanto torna-se imprudente rotular criações que ainda encontra-se em curso. Porém algumas tendências e técnicas importantes já se estabeleceram no decorrer do século XX. São elas: Impressionismo, Nacionalismo do século XX, Influências jazzísticas, Politonalidade, Atonalidade, Expressionismo, Pontilhismo, Serialismo, Neoclassicismo, Microtonalidade, Música concreta, Música eletrônica, Serialismo total, e Música Aleatória. Isto sem contar na especificidade de cada cultura. Há também os músicos que criaram um estilo característico e pessoal, não se inserindo em classificações ou rótulos, restando-lhes apenas o adicional “tradicionalista”.</p>
+</aside>
+
 <!--Criação do footer para, semanticamente, adicionar um rodapé no website-->
 <footer id="rodape">
-<font face="Times New Roman"> <!--Formatação de texto em HTML-->
-    <p>Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
-</font>
-<br/>
+<!--Formatação de texto em HTML além disso parágrafo centralizado por meio de css inline-->
+    <p style="text-align: center; font-weight: normal;">Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
 </footer>
+</div>
 </body>
 </html>

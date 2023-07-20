@@ -7,84 +7,129 @@
     <title>Estilos musicais</title>
 </head>
 <style>
-/*Formatação do corpo do site*/
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("fontes/bubblegum-sans-regular.otf")
+}
+
 body {
-    background-color: #CAD2C5; 
+    background-color:#CAD2C5;
+    color: rgba(0,0,0 1); 
     font-family: arial, sans-serif;
 }
 
-header#cabecalho img#icone {
-    position: relative; 
-    left: 630px;
-    top: -80px;
+/*Estilização para os parágrafos da página*/
+p {
+    text-align: center; 
+    font-weight: bold;
+}
+
+img#logo {
+    margin-top: -40px;
     width: 20%;
-    height: 95%;
+    height: 140%;
+}
+
+div#interface {
+    width: 1000px;
+    margin: -10px auto 0px auto;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 15px;
+}
+
+header#cabecalho img#icone {
+    position: absolute; 
+    height: 10%;
+    width: 20%;
+    left: 880px;
+    top: -10px;
 }
 
 header#cabecalho {
     height: 150px;
-}
-
-header#cabecalho img#logo {
-    position: relative;
-    top: -50px;
-    left: -50px;
-    width: 30%;
-    height: 150%;
+    border-bottom: 1px solid #606060;
 }
 
 h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30px;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
     text-align: center;
-    color: #354F52;
-    font-size: 25pt;
 }
-h2 {
-    text-align: justify;
-    text-indent: 50px; 
-}
-h3 {
-    text-indent: 50px;
-}
+
 /*Formatação do Menu*/
+nav#menu {
+    display: block;
+}
 nav#menu ul {
     list-style: none;
     text-transform: uppercase;
     position: absolute; 
-    top: 20px;
-    left: 350px;
+    top: 40px;
+    left: 200px;
 }
 nav#menu li {
     display: inline-block;
     background-color: #84A98C;
     padding: 10px;
     margin: 2px;
+    transition: background-color 1s;
 }
-
+nav#menu li:hover {
+    background-color: #52796F;
+    text-decoration: underline;
+}
+nav#menu h1{
+    display: none
+}
 nav#menu a{
     color: #2F3E46;
+    text-decoration: none;
 }
 nav#menu a:hover {
     color: #ffff;
 }
 
-/*formatação da página principal*/
-section#principal img {
-    width: 20%;
-    height: 20%;
-    position: relative;
-    left: 500px;
+a {
+    color: #606060;
+    text-decoration: none;
 }
 
-/*Formatação do footer*/
-footer#rodape p{
-    text-align: center
+a:hover {
+    text-decoration: underline;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #354F52;
+    background-color: #CAD2C5;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
 }
 
 footer#rodape img#logo-if {
     width: 2%;
     height: 2%;
     margin-bottom: -5px;
-}
+}    
 
 /*Formatação da tabela*/
 
@@ -128,7 +173,9 @@ table#tabelaspec caption span {
     margin-top: 10px;
 }
 </style>
+
 <body>
+<div id="interface">
 <!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
 <header id = "cabecalho">
     <img id="logo" src="imagens/icone-sonix.png"  alt='imagem da logo escrito Sonix em fundo verde com uma nota musical no meio e ondas sonoras atrás'><!--Primeira imagem solicitada-->
@@ -143,21 +190,19 @@ table#tabelaspec caption span {
         </ul>
     </nav>
 </header>
-<hr>
 <!--Para inserir o conteúdo principal, foi criada a tag section-->
 <section id="principal">
 <!--Essa página tem como intuito principal apresentar um pouco sobre os diferentes estilos musicais e evidenciar, por meio do uso de uma tabela, a predominância dos gêneros mais ouvidos em todo o mundo discutidos-->
-<font face="Boogaloo"><!--Primeiro título inserido juntamente a 3 formatações de texto (fonte e itálico)-->
+<!--Primeiro título inserido juntamente a 3 formatações de texto (fonte e itálico)-->
     <h1><i>Alguns dos estilos musicais mais populares e amplamente ouvidos em todo o mundo incluem o pop, o hip-hop/rap, o rock e a música eletrônica.</i></h1>
-</font>
 
-<font face="Epilogue"><!--Segundo título inserido juntamente à alteração na fonte-->
-    <h2>Assim como é possível observar na tabela abaixo, o Rock surgiu e se firmou nos Estados Unidos durante a década de 50, tendo rapidamente se espalhado por todo o mundo. Sua história começou com a influência cultural da música dos escravos vindos da África, na sociedade norte-americana como forma de expressão cultural e artística alcançando grandes proporções.</h2>
-</font>
+
+    <p>Assim como é possível observar na tabela abaixo, o Rock surgiu e se firmou nos Estados Unidos durante a década de 50, tendo rapidamente se espalhado por todo o mundo. Sua história começou com a influência cultural da música dos escravos vindos da África, na sociedade norte-americana como forma de expressão cultural e artística alcançando grandes proporções.</p>
+
 
 <!--Inserção da tabela com o ranking de músicas muito escutadas de acordo com a época-->
 <table id="tabelaspec">  
-    <caption>Tabela com músicas que tiveram grande sucesso<span>Jun/2023</span></caption>
+    <caption>Tabela com músicas que tiveram grande sucesso<span>Jul/2023</span></caption>
     <tr><td rowspan='5' class="ce">Década de 1960</td><td class="cd">"Hey Jude" - The Beatles (1968)</td></tr>
     <tr><td class="cd">"Like a Rolling Stone" - Bob Dylan (1965)</td></tr>
     <tr><td class="cd">"Respect" - Aretha Franklin (1967)</td></tr>
@@ -185,17 +230,14 @@ table#tabelaspec caption span {
     <tr><td class="cd">"Clocks" - Coldplay (2002)</td></tr>
     </table>
 
-<font face="Epilogue">   <!--Terceiro título inserido juntamente à alteração na fonte e texto marcado-->
-    <h3>A banda de rock "The Beatles" está presente na tabela com duas de suas músicas. Formado por quatro jovens de Liverpool, o grupo mudou o comportamento dos cantores dentro e fora do palco, revolucionando os conceitos dos discos, apresentações, moda e composições e fazendo que os nomes de seus integrantes jamais fossem esquecidos: <mark>John Lennon, Paul McCartney, George Harrison e Ringo Starr.</mark></h3>
-</font>
+<!--Terceiro título inserido juntamente à alteração na fonte e texto marcado-->
+    <p>A banda de rock "The Beatles" está presente na tabela com duas de suas músicas. Formado por quatro jovens de Liverpool, o grupo mudou o comportamento dos cantores dentro e fora do palco, revolucionando os conceitos dos discos, apresentações, moda e composições e fazendo que os nomes de seus integrantes jamais fossem esquecidos: <mark>John Lennon, Paul McCartney, George Harrison e Ringo Starr.</mark></p>
 
 </section>
-<hr>
 <footer id="rodape">
-    <font face="Times New Roman"> <!--Formatação de texto em HTML-->
-        <p>Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
-    </font>
-    <br/>
-    </footer>
+    <!--Formatação de texto em HTML-->
+    <p style="text-align: center; font-weight: normal;">Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
+</footer>
+</div>
 </body>
 </html>
