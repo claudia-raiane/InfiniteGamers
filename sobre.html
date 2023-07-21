@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
-</head>
 <style>
+    /*Inserção de nova fonte baixada externamente*/
     @font-face {
         font-family: 'FonteLogo';
         src: url("fontes/bubblegum-sans-regular.otf")
     }
 
+    /*Estilização do corpo da página*/
     body {
         background-color:#CAD2C5;
         color: rgba(0,0,0 1); 
@@ -25,12 +26,14 @@
         font-weight: bold;
     }
 
+    /*Estilização da logo "Sonix"*/
     img#logo {
         margin-top: -40px;
         width: 20%;
         height: 140%;
     }
 
+    /*Estilização da div interface a qual engloba todo o conteúdo da página em si*/
     div#interface {
         width: 1000px;
         margin: -10px auto 0px auto;
@@ -40,6 +43,7 @@
         padding: 15px;
     }
 
+    /*Estilização da segunda imagem presente no cabeçalho*/
     header#cabecalho img#icone {
         position: absolute; 
         height: 5%;
@@ -47,12 +51,14 @@
         left: 880px;
         top: 10px;
     }
-
+    
+    /*Estilização do cabeçalho em si*/
     header#cabecalho {
         height: 150px;
         border-bottom: 1px solid #606060;
     }
 
+    /*Estilização do elemento h1*/
     h1 {
         font-family: 'FonteLogo', sans-serif;
         font-size: 30px;
@@ -105,12 +111,15 @@
         text-decoration: underline;
     }
 
+    /*Formatação da tag section com id corpo no HTML, incluindo a configuração para proporcionar a divisão do conteúdo em colunas*/
     section#corpo {
         display: block; 
         width: 550px;
         float: left;
         padding-right: 15px;
     }
+
+    /*Formatação das tag's h2 presentes na tag article com id noticia-principal*/
     article#noticia-principal h2 {
         font-size: 13pt;
         color: #354F52;
@@ -119,14 +128,7 @@
         margin: 10px 0px 10px 0px;
     }
 
-    header#cabecalho-artigo h1 {
-        font-family: 'FonteLogo', sans-serif;
-        font-size: 20pt;
-        color: #606060;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-
+    /*Formatação da tag aside com id lateral também, especialmente, para a divisão do conteúdo em colunas*/
     aside#lateral {
         width: 400px;
         float: right;
@@ -135,13 +137,7 @@
         border-left: 1px solid #606060;
     }
 
-    aside#lateral h1 {
-        font-family: 'FonteLogo', sans-serif;
-        font-size: 20pt;
-        color: #606060;
-        margin-top: 0px;
-    }
-
+    /*Estilização do elemento h2 presente na tag aside de id lateral*/
     aside#lateral h2 {
         background-color: #84A98C;
         font-size: 13pt;
@@ -149,6 +145,7 @@
         padding: 5px;
     }
 
+    /*Formatação do rodapé na página*/
     footer#rodape {
         clear: both;
         border-top: 1px solid #606060;
@@ -160,6 +157,7 @@
         margin-bottom: -5px;
     }    
 </style>
+</head>
 <div id="interface">
 <body>
 <!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
@@ -183,12 +181,12 @@
         <!--Primeiro título inserido-->
         <h1><i>Sobre a origem do Website</i></h1><!--Tag de formatação de texto para itálico e mudança da fonte-->
 
-        <img id='sonix' src="imagens/icone-sonix.png" alt='ícone do website "Sonix"' style="text-align: center; display: block; margin: -120px auto;"><!--Terceira imagem solicitada contendo a logo do website-->
+        <img id='sonix' src="imagens/icone-sonix.png" alt='ícone do website "Sonix"' style="text-align: center; display: block; margin: -120px auto;"><!--Terceira imagem solicitada contendo a logo do website e inclusão de css inline-->
 
         <p>A nomenclatura dada para o website foi "SONIX" - Soundtracks, Originals, and New Inspiring eXperience. A sigla é inspirada na palavra "sonix" a qual <mark>expressa uma combinação das palavras "sound" (som) e "sonic" (sonoro)</mark>, transmitindo a ideia de uma experiência musical envolvente e inspiradora.</p><!--Tag de formatação de texto para marcado-->
 
         <h1><i>Sobre as contribuintes do projeto</i></h1>
-        <br><img id='clara' src='imagens/foto-clara.jpeg' alt="foto da contribuinte Ana Clara em preto e branco" style="height: 50%;width: 50%; margin-left: 150px;"><br><br>
+        <br><img id='clara' src='imagens/foto-clara.jpeg' alt="foto da contribuinte Ana Clara em preto e branco" style="height: 50%;width: 50%; margin-left: 150px;"><br><!--Quarta imagem e inclusão de css inline-->
 
         <p>➞ Oioi, me chamo Clara, tenho 19 anos, estou no 3º ano do Ensino Médio, no curso de Informática do IFRN-Mo. A música está presente em todos os momentos da minha vida, posso dizer que sem música eu não sou ninguém. Eu sou uma pessoa muito eclética quando se trata de música, sendo os meus estilos favoritos: forró, brega funk, flashback, indie, pop, MPB entre outros. Meus artistas e bandas favoritas são muitas, porém tem algumas que moram no meu coração. Doja Cat, Jão, Carol Biazin, Grafith, Shevchenko Elloco, Lana Del Rey, Magníficos, Mari Fernandez são um dos que fazem parte da minha playlist, não importa a hora e nem o momento do dia. Elas me salvam muito, e  também fazem parte dos momentos que eu estou triste, com raiva, etc. </p>
         <h2><u>Gêneros favoritos:</u></h2><!--Formatação para sublinhado-->
@@ -211,7 +209,7 @@
 </section>
 
 <aside id="lateral">
-        <img id='cecii' src= 'imagens/foto-cecii.jpeg' style="height: 50%;width: 50%; margin-left: 150px;"> <br><br>
+        <img id='cecii' src= 'imagens/foto-cecii.jpeg' style="height: 50%;width: 50%; margin-left: 150px;"><br><!--Quinta imagem e inclusão de css inline-->
         <p>➞ Oi! Eu me chamo Cecília, tenho 16 anos e atualmente curso o 3º ano do ensino médio, junto com o curso de informática - IFRN (Mossoró). Amo música, é uma das minhas válvulas de escape. Meu gosto musical é bem eclético, MPB, internacionais - como: k-pop/j-pop, rock, arctic monkeys, cazuza, stacey ryan, jvke etc. Tanto “calminhas” quanto agitadas, meu gosto é entre esses extremos. </p>
         <h2><u>Gêneros favoritos:</u></h2>
         <ul><strong>
@@ -230,7 +228,7 @@
             <li>Taylor Swift</li>
         </ol></strong>
         <br><br>
-        <img id='clau' src= 'imagens/foto-clau.jpeg' style="height: 50%;width: 50%; margin-left: 150px;"> <br> <br>
+        <img id='clau' src= 'imagens/foto-clau.jpeg' style="height: 50%;width: 50%; margin-left: 150px;"><br><!--Sexta imagem e inclusão de css inline-->
         <p>➞ Olá, me chamo Cláudia (Clau para os mais próximos), tenho 18 anos e curso o 3º ano do ensino médio com curso técnico integrado em Informática no IFRN-MO. Minha experiência com o ramo da música já é algo vindo de muitos anos visto que é algo que sempre esteve bastante presente em minha vida seja apenas como forma de passar o tempo ou como maneira de me expressar (dançando ou cantando). Por fim, pude perceber que meu gosto musical tornou-se muito eclético, sendo assim, escuto os mais diversos estilos musicais e artistas. Alguns gêneros de minha preferência são: MPB, Indie, Pop e Rock. Além disso, alguns artistas que mais escuto são: Jão, Taylor Swift, The Neighbourhood, Chase Atlantic e Anavitória. </p>
         <h2><u>Gêneros favoritos:</u></h2>
         <ul><strong>
@@ -250,7 +248,7 @@
         </ol></strong>
 </aside>
 <footer id="rodape">
-    <!--Formatação de texto em HTML-->
+    <!--Formatação de texto em HTML além disso parágrafo centralizado por meio de css inline-->
     <p style="text-align: center; font-weight: normal;">Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
 </footer>
 </div>

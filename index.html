@@ -9,212 +9,246 @@ verde escuro -> #2F3E46
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonix</title>
-    <style> 
-        @font-face {
-            font-family: 'FonteLogo';
-            src: url("fontes/bubblegum-sans-regular.otf")
-        }
+<style>
+    /*Inserção de nova fonte baixada externamente*/
+    @font-face {
+        font-family: 'FonteLogo';
+        src: url("fontes/bubblegum-sans-regular.otf")
+    }
 
-        body {
-            background-color:#CAD2C5;
-            color: rgba(0,0,0 1); 
-            font-family: arial, sans-serif;
-        }
+    /*Estilização do corpo da página*/
+    body {
+        background-color: #CAD2C5;
+        color: rgba(0, 0, 0 1);
+        font-family: arial, sans-serif;
+    }
 
-        /*Estilização para os parágrafos da página*/
-        p {
-            text-align: justify; 
-            text-indent: 50px;
-            font-weight: bold;
-        }
+    /*Estilização para os parágrafos da página*/
+    p {
+        text-align: justify;
+        text-indent: 50px;
+        font-weight: bold;
+    }
+    /*Estilização da logo "Sonix"*/
+    img#logo {
+        margin-top: -40px;
+        width: 20%;
+        height: 140%;
+    }
 
-        img#logo {
-            margin-top: -40px;
-            width: 20%;
-            height: 140%;
-        }
+    /*Estilização da div interface a qual engloba todo o conteúdo da página em si*/
+    div#interface {
+        width: 1000px;
+        margin: -10px auto 0px auto;
+        background-color: white;
+        position: relative;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+        padding: 15px;
+    }
 
-        div#interface {
-            width: 1000px;
-            margin: -10px auto 0px auto;
-            background-color: white;
-            position: relative;
-            box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-            padding: 15px;
-        }
+    /*Estilização da segunda imagem presente no cabeçalho*/
+    header#cabecalho img#icone {
+        position: absolute;
+        height: 20%;
+        width: 50%;
+        left: 880px;
+        top: -10px;
+    }
 
-        header#cabecalho img#icone {
-            position: absolute; 
-            height: 20%;
-            width: 50%;
-            left: 880px;
-            top: -10px;
-        }
+    /*Estilização do cabeçalho em si*/
+    header#cabecalho {
+        height: 150px;
+        border-bottom: 1px solid #606060;
+    }
 
-        header#cabecalho {
-            height: 150px;
-            border-bottom: 1px solid #606060;
-        }
+    /*Estilização da tag h1*/
+    h1 {
+        font-family: 'FonteLogo', sans-serif;
+        font-size: 30px;
+        color: #000;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+        padding: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
 
-        h1 {
-            font-family: 'FonteLogo', sans-serif;
-            font-size: 30px;
-            color: #000;
-            text-shadow: 1px 1px 1px rgba(0,0,0,.6);
-            padding: 0px;
-            margin-bottom: 0px;
-            text-align: center;
-        }
+    /*Formatação do Menu*/
+    nav#menu {
+        display: block;
+    }
 
-        /*Formatação do Menu*/
-        nav#menu {
-            display: block;
-        }
-        nav#menu ul {
-            list-style: none;
-            text-transform: uppercase;
-            position: absolute; 
-            top: 40px;
-            left: 200px;
-        }
-        nav#menu li {
-            display: inline-block;
-            background-color: #84A98C;
-            padding: 10px;
-            margin: 2px;
-            transition: background-color 1s;
-        }
-        nav#menu li:hover {
-            background-color: #52796F;
-            text-decoration: underline;
-        }
-        nav#menu h1{
-            display: none
-        }
-        nav#menu a{
-            color: #2F3E46;
-            text-decoration: none;
-        }
-        nav#menu a:hover {
-            color: #ffff;
-        }
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: 40px;
+        left: 200px;
+    }
 
-        a {
-            color: #606060;
-            text-decoration: none;
-        }
+    nav#menu li {
+        display: inline-block;
+        background-color: #84A98C;
+        padding: 10px;
+        margin: 2px;
+        transition: background-color 1s;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    nav#menu li:hover {
+        background-color: #52796F;
+        text-decoration: underline;
+    }
 
-        section#corpo {
-            display: block; 
-            width: 550px;
-            float: left;
-            border-right: 1px solid #606060;
-            padding-right: 15px;
-        }
-        article#noticia-principal h2 {
-            font-size: 13pt;
-            color: #354F52;
-            background-color: #CAD2C5;
-            padding: 5px 0px 5px 10px;
-            margin: 10px 0px 10px 0px;
-        }
+    nav#menu h1 {
+        display: none
+    }
 
-        header#cabecalho-artigo h1 {
-            font-family: 'FonteLogo', sans-serif;
-            font-size: 20pt;
-            color: #606060;
-            margin-bottom: 0px;
-            margin-top: 0px;
-        }
+    nav#menu a {
+        color: #2F3E46;
+        text-decoration: none;
+    }
 
-        aside#lateral {
-            display: block;
-            width: 400px;
-            float: right;
-            background-color: #CAD2C5;
-            padding: 10px;
-            margin-top: 10px;
-            box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-        }
+    nav#menu a:hover {
+        color: #ffff;
+    }
 
-        aside#lateral h1 {
-            font-family: 'FonteLogo', sans-serif;
-            font-size: 20pt;
-            color: #606060;
-            margin-top: 0px;
-        }
+    a {
+        color: #606060;
+        text-decoration: none;
+    }
 
-        aside#lateral h2 {
-            background-color: #84A98C;
-            font-size: 13pt;
-            color: #ffffff;
-            padding: 5px;
-        }
+    a:hover {
+        text-decoration: underline;
+    }
 
-        footer#rodape {
-            clear: both;
-            border-top: 1px solid #606060;
-        }
+    /*Formatação da tag section com id corpo no HTML, incluindo a configuração para proporcionar a divisão do conteúdo em colunas*/
+    section#corpo {
+        display: block;
+        width: 550px;
+        float: left;
+        border-right: 1px solid #606060;
+        padding-right: 15px;
+    }
 
-        footer#rodape img#logo-if {
-            width: 2%;
-            height: 2%;
-            margin-bottom: -5px;
-        }    
-    </style>
+    /*Formatação das tag's h2 presentes na tag article com id noticia-principal*/
+    article#noticia-principal h2 {
+        font-size: 13pt;
+        color: #354F52;
+        background-color: #CAD2C5;
+        padding: 5px 0px 5px 10px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    /*Formatação da tag aside com id lateral também, especialmente, para a divisão do conteúdo em colunas*/
+    aside#lateral {
+        display: block;
+        width: 400px;
+        float: right;
+        background-color: #CAD2C5;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    }
+    
+    /*Estilização do elemento h2 presente na tag aside de id lateral*/
+    aside#lateral h2 {
+        background-color: #84A98C;
+        font-size: 13pt;
+        color: #ffffff;
+        padding: 5px;
+    }
+
+    /*Formatação no rodapé da página*/
+    footer#rodape {
+        clear: both;
+        border-top: 1px solid #606060;
+    }
+
+    footer#rodape img#logo-if {
+        width: 2%;
+        height: 2%;
+        margin-bottom: -5px;
+    }
+</style>
 </head>
+
 <body>
-<div id="interface">
-<!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
-<header id = "cabecalho">
-    <img id="logo" src="imagens/icone-sonix.png" alt='imagem da logo escrito Sonix em fundo verde com uma nota musical no meio e ondas sonoras atrás'> <!--Primeira imagem solicitada-->
-    <img id="icone" src="imagens/icone-notas.png" alt="imagem no canto direito de notas musicais como em uma partitura"><!--Segunda imagem solicitada-->
-    <nav id="menu"> <!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
-        <ul type="disc">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="estilos.html">Estilos musicais</a></li>
-            <li><a href="midia.html">Multimídia</a></li>
-            <li><a href="contato.html">Fale conosco</a></li>
-        </ul>
-    </nav>
-</header>
-<section id='corpo'>
-<article id="noticia-principal">
-<!--Para inserir o conteúdo principal, foi criada a tag section-->
-<!--Essa página tem como intuito principal apresentar conceitos básicos sobre a temática do website: a música-->
-<h1><!--Tag de formatação de texto para itálico e mudança da fonte--><i>Saiba tudo sobre o mundo musical!</i></h1><!--Primeiro título inserido-->
+    <div id="interface"> <!--Inclusão de div com id englobando toda a página para estilização-->
+        <!--Inclusão de header semanticamente para adicionar um menu promovendo a navegação entre as diferentes abas-->
+        <header id="cabecalho">
+            <img id="logo" src="imagens/icone-sonix.png"
+                alt='imagem da logo escrito Sonix em fundo verde com uma nota musical no meio e ondas sonoras atrás'>
+            <!--Primeira imagem solicitada-->
+            <img id="icone" src="imagens/icone-notas.png"
+                alt="imagem no canto direito de notas musicais como em uma partitura"><!--Segunda imagem solicitada-->
+            <nav id="menu"> <!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
+                <ul type="disc">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="estilos.html">Estilos musicais</a></li>
+                    <li><a href="midia.html">Multimídia</a></li>
+                    <li><a href="contato.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id='corpo'>
+            <article id="noticia-principal">
+                <!--Para inserir o conteúdo principal, foram criadas as tag's section e article-->
+                <!--Essa página tem como intuito principal apresentar conceitos básicos sobre a temática do website: a música-->
+                <h1><!--Tag de formatação de texto para itálico e mudança da fonte--><i>Saiba tudo sobre o mundo
+                        musical!</i></h1><!--Primeiro título inserido-->
 
-<h2><!--Segunda formatação de texto--><u>➞ Mas afinal...O que é a música?</u></h2><!--Segunda formatação de título-->
-<p>Música é a combinação de ritmo, harmonia e melodia, de maneira agradável ao ouvido. No sentido amplo é a organização temporal de sons e silêncios (pausas). No sentido restrito, é a arte de coordenar e transmitir efeitos sonoros, harmoniosos e esteticamente válidos, podendo ser transmitida através da voz ou de instrumentos musicais.</p><!--Terceira formatação de título-->
-<img src="imagens/icone-emoji.png" alt="emoji de whatsapp pensando" style="height: 50%;width: 50%; margin-left: 120px;"><!--Terceira imagem solicitada-->
-<br>
+                <h2><!--Segunda formatação de texto--><u>➞ Mas afinal...O que é a música?</u></h2>
+                <!--Segunda formatação de título-->
+                <p>Música é a combinação de ritmo, harmonia e melodia, de maneira agradável ao ouvido. No sentido amplo
+                    é a organização temporal de sons e silêncios (pausas). No sentido restrito, é a arte de coordenar e
+                    transmitir efeitos sonoros, harmoniosos e esteticamente válidos, podendo ser transmitida através da
+                    voz ou de instrumentos musicais.</p>
+                <img src="imagens/icone-emoji.png" alt="emoji de whatsapp pensando"
+                    style="height: 50%;width: 50%; margin-left: 120px;"><!--Terceira imagem solicitada-->
+                <br>
 
-<h2><u>➞ A origem da música</u></h2><!--Formatação de título e texto-->
-<p>A música existe e sempre existiu como produção cultural, pois de acordo com estudos científicos, desde que o ser humano começou a se organizar em tribos primitivas pela África, a música era parte integrante do cotidiano dessas pessoas. Acredita-se que a música tenha surgido há 50.000 anos, onde as primeiras manifestações tenham sido feitas no continente africano, expandindo-se pelo mundo com o dispersar da raça humana pelo planeta. A música, ao ser produzida e/ou reproduzida, é influenciada diretamente pela organização sociocultural e econômica local, contando ainda com as características climáticas e o acesso tecnológico que envolvem toda a relação com a linguagem musical. A música possui a capacidade estética de traduzir os sentimentos, atitudes e valores culturais de um povo ou nação. A música é uma linguagem local e global.</p>
-<br>
-</article>
-</section>
+                <h2><u>➞ A origem da música</u></h2><!--Formatação de título e texto-->
+                <p>A música existe e sempre existiu como produção cultural, pois de acordo com estudos científicos,
+                    desde que o ser humano começou a se organizar em tribos primitivas pela África, a música era parte
+                    integrante do cotidiano dessas pessoas. Acredita-se que a música tenha surgido há 50.000 anos, onde
+                    as primeiras manifestações tenham sido feitas no continente africano, expandindo-se pelo mundo com o
+                    dispersar da raça humana pelo planeta. A música, ao ser produzida e/ou reproduzida, é influenciada
+                    diretamente pela organização sociocultural e econômica local, contando ainda com as características
+                    climáticas e o acesso tecnológico que envolvem toda a relação com a linguagem musical. A música
+                    possui a capacidade estética de traduzir os sentimentos, atitudes e valores culturais de um povo ou
+                    nação. A música é uma linguagem local e global.</p>
+                <br>
+            </article>
+        </section>
 
-<aside id="lateral">
-<h2><u>➞ A música na contemporaneidade</u></h2><!--Formatação de título e texto-->
-<p>O século XX é marcado por uma série de novas tendências e técnicas musicais, no entanto torna-se imprudente rotular criações que ainda encontra-se em curso. Porém algumas tendências e técnicas importantes já se estabeleceram no decorrer do século XX. São elas: Impressionismo, Nacionalismo do século XX, Influências jazzísticas, Politonalidade, Atonalidade, Expressionismo, Pontilhismo, Serialismo, Neoclassicismo, Microtonalidade, Música concreta, Música eletrônica, Serialismo total, e Música Aleatória. Isto sem contar na especificidade de cada cultura. Há também os músicos que criaram um estilo característico e pessoal, não se inserindo em classificações ou rótulos, restando-lhes apenas o adicional “tradicionalista”.</p>
-</aside>
+        <!--Inserção da tag aside juntamente ao id lateral para estilização e divisão do corpo do site em colunas-->
+        <aside id="lateral">
+            <h2><u>➞ A música na contemporaneidade</u></h2><!--Formatação de título e texto-->
+            <p>O século XX é marcado por uma série de novas tendências e técnicas musicais, no entanto torna-se
+                imprudente rotular criações que ainda encontra-se em curso. Porém algumas tendências e técnicas
+                importantes já se estabeleceram no decorrer do século XX. São elas: Impressionismo, Nacionalismo do
+                século XX, Influências jazzísticas, Politonalidade, Atonalidade, Expressionismo, Pontilhismo,
+                Serialismo, Neoclassicismo, Microtonalidade, Música concreta, Música eletrônica, Serialismo total, e
+                Música Aleatória. Isto sem contar na especificidade de cada cultura. Há também os músicos que criaram um
+                estilo característico e pessoal, não se inserindo em classificações ou rótulos, restando-lhes apenas o
+                adicional “tradicionalista”.</p>
+        </aside>
 
-<!--Criação do footer para, semanticamente, adicionar um rodapé no website-->
-<footer id="rodape">
-<!--Formatação de texto em HTML além disso parágrafo centralizado por meio de css inline-->
-    <p style="text-align: center; font-weight: normal;">Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img id='logo-if' src='imagens/logo-if.png' alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p> 
-</footer>
-</div>
+        <!--Criação do footer para, semanticamente, adicionar um rodapé no website-->
+        <footer id="rodape">
+            <!--Formatação de texto em HTML além disso parágrafo centralizado por meio de css inline-->
+            <p style="text-align: center; font-weight: normal;">Copyright &copy; 2023 - by Ana Clara, Cecília Tauany e
+                Cláudia Raiane <br> <a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a> | <img
+                    id='logo-if' src='imagens/logo-if.png'
+                    alt="logo do instituto federal"><!--Adição de mais uma imagem na página--></p>
+        </footer>
+    </div>
 </body>
+
 </html>
