@@ -7,176 +7,159 @@
     <title>Multimídia</title>
 </head>
 <style>
-/*Inserção de nova fonte baixada externamente*/
-@font-face {
-    font-family: 'FonteLogo';
-    src: url("fontes/bubblegum-sans-regular.otf")
-}
+    /*Inserção de nova fonte baixada externamente*/
+    @font-face {
+        font-family: 'FonteLogo';
+        src: url("fontes/bubblegum-sans-regular.otf")
+    }
 
-body {
-    background-color:#CAD2C5;
-    color: rgba(0,0,0 1); 
-    font-family: arial, sans-serif;
-}
+    /*Estilização do corpo do HTML*/
+    body {
+        background-color:#CAD2C5;
+        color: rgba(0,0,0 1); 
+        font-family: arial, sans-serif;
+    }
 
-/*Estilização para os parágrafos da página*/
-p {
-    text-align: justify; 
-    text-indent: 50px;
-    font-weight: bold;
-}
+    /*Estilização para os parágrafos da página*/
+    p {
+        text-align: justify; 
+        text-indent: 50px;
+        font-weight: bold;
+    }
 
-img#logo {
-    margin-top: -40px;
-    width: 20%;
-    height: 140%;
-}
+    /*Estilização da logo "Sonix"*/
+    img#logo {
+        margin-top: -40px;
+        width: 20%;
+        height: 140%;
+    }
 
-div#interface {
-    width: 1000px;
-    margin: -10px auto 0px auto;
-    background-color: white;
-    position: relative;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-    padding: 15px;
-}
+    /*Estilização do elemento div com logo interface*/
+    div#interface {
+        width: 1000px;
+        margin: -10px auto 0px auto;
+        background-color: white;
+        position: relative;
+        box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+        padding: 15px;
+    }
 
-header#cabecalho img#icone {
-    position: absolute; 
-    height: 20%;
-    width: 20%;
-    left: 840px;
-    top: -40px;
-}
+    /*Estilização da segunda imagem no cabeçalho*/
+    header#cabecalho img#icone {
+        position: absolute; 
+        height: 20%;
+        width: 20%;
+        left: 840px;
+        top: -40px;
+    }
 
-header#cabecalho {
-    height: 150px;
-    border-bottom: 1px solid #606060;
-}
+    /*Estilização do cabeçalho em si*/
+    header#cabecalho {
+        height: 150px;
+        border-bottom: 1px solid #606060;
+    }
 
-h1 {
-    font-family: 'FonteLogo', sans-serif;
-    font-size: 30px;
-    color: #000;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
-    padding: 20px;
-    margin-bottom: 0px;
-    text-align: center;
-}
+    /*Estilização do elemento h1*/
+    h1 {
+        font-family: 'FonteLogo', sans-serif;
+        font-size: 30px;
+        color: #000;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+        padding: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
 
-h3 {
-    font-size: 18px;
-    padding: 20px;
-    margin-bottom: 0px;
-    text-align: right;
-}
+    /*Estilização do elemento h3*/
+    h3 {
+        font-size: 18px;
+        padding: 20px;
+        margin-bottom: 0px;
+        text-align: right;
+    }
 
-/*Formatação do Menu*/
-nav#menu {
-    display: block;
-}
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute; 
-    top: 40px;
-    left: 200px;
-}
-nav#menu li {
-    display: inline-block;
-    background-color: #84A98C;
-    padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
-}
-nav#menu li:hover {
-    background-color: #52796F;
-    text-decoration: underline;
-}
-nav#menu h1{
-    display: none
-}
-nav#menu a{
-    color: #2F3E46;
-    text-decoration: none;
-}
-nav#menu a:hover {
-    color: #ffff;
-}
+    /*Formatação do Menu*/
+    nav#menu {
+        display: block;
+    }
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute; 
+        top: 40px;
+        left: 200px;
+    }
+    nav#menu li {
+        display: inline-block;
+        background-color: #84A98C;
+        padding: 10px;
+        margin: 2px;
+        transition: background-color 1s;
+    }
+    nav#menu li:hover {
+        background-color: #52796F;
+        text-decoration: underline;
+    }
+    nav#menu h1{
+        display: none
+    }
+    nav#menu a{
+        color: #2F3E46;
+        text-decoration: none;
+    }
+    nav#menu a:hover {
+        color: #ffff;
+    }
 
-a {
-    color: #606060;
-    text-decoration: none;
-}
+    a {
+        color: #606060;
+        text-decoration: none;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    a:hover {
+        text-decoration: underline;
+    }
 
-article#noticia-principal h2 {
-    font-size: 13pt;
-    color: #354F52;
-    background-color: #CAD2C5;
-    padding: 5px 0px 5px 10px;
-    margin: 10px 0px 10px 0px;
-}
+    /*Estilização do rodapé*/
+    footer#rodape {
+        clear: both;
+        border-top: 1px solid #606060;
+    }
 
-header#cabecalho-artigo h1 {
-    font-family: 'FonteLogo', sans-serif;
-    font-size: 20pt;
-    color: #606060;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-footer#rodape {
-    clear: both;
-    border-top: 1px solid #606060;
-}
-
-footer#rodape img#logo-if {
-    width: 2%;
-    height: 2%;
-    margin-bottom: -5px;
-}    
+    footer#rodape img#logo-if {
+        width: 2%;
+        height: 2%;
+        margin-bottom: -5px;
+    }    
 
 
-/*Formatação da seção para inclusão da imagem de fundo*/
-section#tv-radio {
-    position: relative;
-    left: 50px;
-    width: 900px;
-    height: 570px;
-    background: url('imagens/radio-tv.png') no-repeat;
-    padding-bottom: 10px;
-}
+    /*Formatação da seção para inclusão da imagem de fundo*/
+    section#tv-radio {
+        position: relative;
+        left: 50px;
+        width: 900px;
+        height: 570px;
+        background: url('imagens/radio-tv.png') no-repeat;
+        padding-bottom: 10px;
+    }
 
-/*Formatação do bloco de áudio para posicionamento dentro da imagem*/
-audio#musica {
-    display: block;
-    position: relative;
-    left: 575px;
-    top: 490px;
-    width: 300px;
-}
+    /*Formatação do bloco de áudio para posicionamento dentro da imagem*/
+    audio#musica {
+        display: block;
+        position: relative;
+        left: 575px;
+        top: 490px;
+        width: 300px;
+    }
 
-/*Formatação do vídeo para posicionamento dentro da imagem*/
-video#filme {
-    display: block;
-    position: relative;
-    left: 90px;
-    top: 80px;
-    width: 440px;
-}
-
-/*Formatação da imagem na página principal*/
-section#principal img {
-    width: 20%;
-    height: 20%;
-    position: relative;
-    left: 500px;
-}
-
+    /*Formatação do vídeo para posicionamento dentro da imagem*/
+    video#filme {
+        display: block;
+        position: relative;
+        left: 90px;
+        top: 80px;
+        width: 440px;
+    }
 </style>
 <body>
 <div id="interface">

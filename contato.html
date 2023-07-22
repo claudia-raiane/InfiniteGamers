@@ -7,165 +7,169 @@
     <title>Contato</title>
 </head>
 <style>
-/*Inserção de nova fonte baixada externamente*/
-@font-face {
-    font-family: 'FonteLogo';
-    src: url("fontes/bubblegum-sans-regular.otf")
-}
+    /*Inserção de nova fonte baixada externamente*/
+    @font-face {
+        font-family: 'FonteLogo';
+        src: url("fontes/bubblegum-sans-regular.otf")
+    }
 
-body {
-    background-color:#CAD2C5;
-    color: rgba(0,0,0 1); 
-    font-family: arial, sans-serif;
-}
+    /*Estilização do corpo do HTML*/
+    body {
+        background-color:#CAD2C5;
+        color: rgba(0,0,0 1); 
+        font-family: arial, sans-serif;
+    }
 
-/*Estilização para os parágrafos da página*/
-p {
-    text-align: center; 
-    font-weight: bold;
-}
+    /*Estilização para os parágrafos da página*/
+    p {
+        text-align: center; 
+        font-weight: bold;
+    }
 
-img#logo {
-    margin-top: -40px;
-    width: 20%;
-    height: 140%;
-}
+    /*Estilização da logo "Sonix"*/
+    img#logo {
+        margin-top: -40px;
+        width: 20%;
+        height: 140%;
+    }
 
-div#interface {
-    width: 1000px;
-    margin: -10px auto 0px auto;
-    background-color: white;
-    position: relative;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-    padding: 15px;
-}
+    /*Estilização da div com id interface*/
+    div#interface {
+        width: 1000px;
+        margin: -10px auto 0px auto;
+        background-color: white;
+        position: relative;
+        box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+        padding: 15px;
+    }
 
-header#cabecalho img#icone {
-    position: absolute; 
-    height: 10%;
-    width: 20%;
-    left: 880px;
-    top: 15px;
-}
+    /*Estilização da segunda imagem presente no cabeçalho*/
+    header#cabecalho img#icone {
+        position: absolute; 
+        height: 10%;
+        width: 20%;
+        left: 880px;
+        top: 15px;
+    }
 
-header#cabecalho {
-    height: 150px;
-    border-bottom: 1px solid #606060;
-}
+    /*Estilização do cabeçalho*/
+    header#cabecalho {
+        height: 150px;
+        border-bottom: 1px solid #606060;
+    }
 
-h1 {
-    font-family: 'FonteLogo', sans-serif;
-    font-size: 30px;
-    color: #000;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
-    padding: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-}
+    /*Estilização do elemento h1*/
+    h1 {
+        font-family: 'FonteLogo', sans-serif;
+        font-size: 30px;
+        color: #000;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+        padding: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
 
-legend {
-    color: #2F3E46;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
-    padding: 0px;
-    margin-bottom: 0px;
-    font-weight: bold;
-}
+    /*Estilização das seções no form*/
+    legend {
+        color: #2F3E46;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+        padding: 0px;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
 
-/*Formatação do Menu*/
-nav#menu {
-    display: block;
-}
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute; 
-    top: 40px;
-    left: 200px;
-}
-nav#menu li {
-    display: inline-block;
-    background-color: #84A98C;
-    padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
-}
-nav#menu li:hover {
-    background-color: #52796F;
-    text-decoration: underline;
-}
-nav#menu h1{
-    display: none
-}
-nav#menu a{
-    color: #2F3E46;
-    text-decoration: none;
-}
-nav#menu a:hover {
-    color: #ffff;
-}
+    /*Formatação do Menu*/
+    nav#menu {
+        display: block;
+    }
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute; 
+        top: 40px;
+        left: 200px;
+    }
+    nav#menu li {
+        display: inline-block;
+        background-color: #84A98C;
+        padding: 10px;
+        margin: 2px;
+        transition: background-color 1s;
+    }
+    nav#menu li:hover {
+        background-color: #52796F;
+        text-decoration: underline;
+    }
+    nav#menu h1{
+        display: none
+    }
+    nav#menu a{
+        color: #2F3E46;
+        text-decoration: none;
+    }
+    nav#menu a:hover {
+        color: #ffff;
+    }
 
-a {
-    color: #606060;
-    text-decoration: none;
-}
+    a {
+        color: #606060;
+        text-decoration: none;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    a:hover {
+        text-decoration: underline;
+    }
 
-h2 {
-    font-size: 13pt;
-    color: #354F52;
-    background-color: #CAD2C5;
-    padding: 5px 0px 5px 10px;
-    margin: 10px 0px 10px 0px;
-}
+    /*Estilização do elemento h2*/
+    h2 {
+        font-size: 13pt;
+        color: #354F52;
+        background-color: #CAD2C5;
+        padding: 5px 0px 5px 10px;
+        margin: 10px 0px 10px 0px;
+    }
 
-#genero label {
-    color: #354F52;
-    padding: 5px 0px 5px 10px;
-    margin: 10px 0px 10px 0px;
-    font-size: 13pt;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
-    font-weight: bold;
-}
+    /*Estilização do label nos elementos de id genero*/
+    #genero label {
+        color: #354F52;
+        padding: 5px 0px 5px 10px;
+        margin: 10px 0px 10px 0px;
+        font-size: 13pt;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+        font-weight: bold;
+    }
 
-#mensagem label {
-    display: block;
-    text-align: center;
-}
+    /*Estilização do label nos elementos de id mensagem*/
+    #mensagem label {
+        display: block;
+        text-align: center;
+    }
 
-#mensagem textarea {
-    display: block;
-    margin: 0 auto;
-}
+    /*Estilização da textarea nos elementos de id mensagem*/
+    #mensagem textarea {
+        display: block;
+        margin: 0 auto;
+    }
 
-header#cabecalho-artigo h1 {
-    font-family: 'FonteLogo', sans-serif;
-    font-size: 20pt;
-    color: #606060;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
+    /*Estilização do rodapé*/
+    footer#rodape {
+        clear: both;
+        border-top: 1px solid #606060;
+    }
 
-footer#rodape {
-    clear: both;
-    border-top: 1px solid #606060;
-}
+    footer#rodape img#logo-if {
+        width: 2%;
+        height: 2%;
+        margin-bottom: -5px;
+    }    
 
-footer#rodape img#logo-if {
-    width: 2%;
-    height: 2%;
-    margin-bottom: -5px;
-}    
-
-/*Formatação do campo de entrada enviar para posicionamento*/
-input#cEnviar {
-    width: 10%;
-    height: 10%;
-    position: relative;
-    right: 0;
-}
+    /*Formatação do campo de entrada enviar para posicionamento*/
+    input#cEnviar {
+        width: 10%;
+        height: 10%;
+        position: relative;
+        right: 0;
+    }
 </style>
 <body>
 <div id="interface">
@@ -185,11 +189,10 @@ input#cEnviar {
 </header>
 
 <hgroup>
-    <!--Primeiro título inserido juntamente à formatação de texto (fonte e itálico)-->
+    <!--Primeiro título inserido juntamente à formatação de texto (itálico)-->
     <h1><i>Contate as desenvolvedoras</i></h1>
   
-
-    <!--Segundo e terceiro títulos inseridos juntamente à formatação de texto (fonte e sublinhado no h2)-->
+    <!--Segundo e terceiro títulos inseridos juntamente à formatação de texto (sublinhado no h2)-->
     <h2><u>➞ As informações coletadas pelo formulário serão utilizadas para fins de pesquisa</u></h2>
     <h3>Preencha o breve questionário abaixo:</h3>
    
