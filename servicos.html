@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+</head>
+<style>
+    /*Inserção de nova fonte baixada externamente*/
+    @font-face {
+        font-family: 'FonteLogo';
+        src: url("fontes/bubblegum-sans-regular.otf")
+    }
+
+    /*Estilização do corpo do HTML*/
+    body {
+        background-color:rgba(243, 223, 162, 1);
+        color: rgba(14, 15, 25, 1);
+        font-family: arial, sans-serif;
+    }
+
+    /*Estilização para os parágrafos da página*/
+    p {
+        text-align: justify; 
+        text-indent: 50px;
+        font-weight: bold;
+    }
+
+    /*Estilização da logo "Sonix"*/
+    img#logo {
+        margin-top: -40px;
+        width: 20%;
+        height: 140%;
+    }
+
+    .servicos {
+        width: 40%;
+        height: 40%;
+        margin-left: 30%;
+    }
+    /*Estilização do elemento div com logo interface*/
+    div#interface {
+        width: 1000px;
+        margin: -10px auto 0px auto;
+        background-color: white;
+        position: relative;
+        box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+        padding: 15px;
+    }
+
+     /*Estilização da segunda imagem presente no cabeçalho*/
+     header#cabecalho img#icone {
+        position: absolute; 
+        height: 2%;
+        width: 5%;
+        left: 880px;
+        top: 60px;
+    }
+
+    /*Estilização do cabeçalho em si*/
+    header#cabecalho {
+        height: 150px;
+        border-bottom: 1px solid #606060;
+    }
+
+    /*Estilização do elemento h1*/
+    h1 {
+        font-family: 'FonteLogo', sans-serif;
+        font-size: 30px;
+        color: #000;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+        padding: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    /*Estilização do elemento h2*/
+    h2 {
+        font-size: 18px; 
+        padding: 5px 0px 5px 10px;
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+        color:  rgba(78, 20, 140, 1);
+        background-color: rgba(202, 229, 255, 1);
+    }
+        /*Formatação do Menu*/
+        nav#menu {
+            display: block;
+        }
+        nav#menu ul {
+            list-style: none;
+            text-transform: uppercase;
+            position: absolute; 
+            top: 40px;
+            left: 200px;
+        }
+        nav#menu li {
+            display: inline-block;
+            background-color:rgba(111, 138, 183, 1);;
+            padding: 10px;
+            margin: 2px;
+            transition: background-color 1s;
+        }
+        nav#menu li:hover {
+            background-color: rgba(78, 20, 140, 1);
+            text-decoration: underline;
+        }
+        nav#menu h1{
+            display: none
+        }
+        nav#menu a{
+            color:rgba(14, 15, 25, 1);
+            text-decoration: none;
+        }
+        nav#menu a:hover {
+            color: #ffff;
+        }
+    
+        a {
+            color: #606060;
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+
+    /*Estilização do rodapé*/
+    footer#rodape {
+        clear: both;
+        border-top: 1px solid #606060;
+    }
+
+    footer#rodape img#logo-instagram {
+        width: 2%;
+        height: 2%;
+        margin-bottom: -5px;
+    }    
+
+</style>
+<body>
+<div id="interface">
+<!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
+<header id = "cabecalho">
+    <img id="logo" src="" alt='logo da loja'><!--Primeira imagem solicitada-->
+    <img id="icone" src="imagens/icone-carrinho.png" alt="imagem de um símbolo retratando a comunicação do desenvolvedor com o meio virtual (usuários)"><!--Segunda imagem solicitada-->
+    <nav id="menu">
+        <ul type="disc"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="games.html">Jogos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Fale conosco</a></li>
+        </ul>
+    </nav>
+</header>
+<header id="cabecalho-artigo"><!--Essa página tem como intuito principal apresentar uma exemplificação de diferentes estilos musicais e a influência da localização do artista na música a qual ele produz-->
+    <hgroup>
+        <!--Primeiro título inserido juntamente a 3 formatações de texto (fonte e itálico)-->
+        <h1><i>Serviços disponibilizados pessoalmente ou on-line pela loja</i></h1>
+        <p text-align="justify"><i>→ Para solicitar algum dos serviços abaixo, o cliente deve entrar em contato por meio de nosso Instagram ou preenchendo o formulário na aba "Fale conosco" </i>😃</p>
+        <!--Terceiro título inserido com a formatação de texto "mark"-->
+        <h2>Conserto de consoles</h2>
+        <img src="imagens/imagem-conserto-console.jfif" alt="Imagem de um notebook com um ícone de engrenagem" class="servicos">
+        <hr>
+        <h2>Conserto, montagem e limpeza de computadores</h2>
+        <img src="imagens/imagem-montagem-computador.jfif" alt="Imagem de um notebook com um ícone de engrenagem" class="servicos">
+        <hr>
+        <h2>Consultoria para compra de computadores e/ou peças eletrônicas</h2>
+        <img src="imagens/imagem-consultoria.jfif" alt="Imagem de um notebook com um ícone de engrenagem" class="servicos">
+        <hr>
+        <h2>Formatação de computadores</h2>
+        <img src="imagens/imagem-formatacao.jfif" alt="Imagem de um notebook com um ícone de engrenagem" class="servicos">
+
+    </hgroup>
+</header>
+
+<footer id="rodape">
+    <!--Formatação de texto em HTML além disso parágrafo centralizado por meio de css inline-->
+    <p style="text-align: center; font-weight: normal;">Copyright &copy; 2023 - by nome da loja <br> <a href="perfil da loja" target="_blank">Instagram</a> | <img
+            id='logo-instagram' src='imagens/logo-insta.png'
+            alt="logo da rede social instagram"><!--Adição de mais uma imagem na página--></p>
+</footer>
+</div>
+</body>
+</html>

@@ -55,10 +55,10 @@ preto: rgba(14, 15, 25, 1);
     /*Estilização da segunda imagem presente no cabeçalho*/
     header#cabecalho img#icone {
         position: absolute; 
-        height: 5%;
+        height: 2.5%;
         width: 5%;
         left: 880px;
-        top: 50px;
+        top: 60px;
     }
 
     /*Estilização do cabeçalho*/
@@ -171,15 +171,6 @@ preto: rgba(14, 15, 25, 1);
         height: 2%;
         margin-bottom: -5px;
     }    
-
-    /*Formatação do campo de entrada enviar para posicionamento*/
-    input#cEnviar {
-        padding: 2px;
-        width: 5%;
-        height: 5%;
-        position: relative;
-        right: 0;
-    }
 </style>
 <body>
 <div id="interface">
@@ -190,9 +181,9 @@ preto: rgba(14, 15, 25, 1);
     <nav id="menu">
         <ul type="disc"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
             <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Consoles</a></li>
-            <li><a href="estilos.html">Jogos</a></li>
-            <li><a href="midia.html">Serviços</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="games.html">Jogos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
             <li><a href="contato.html">Fale conosco</a></li>
         </ul>
     </nav>
@@ -232,7 +223,11 @@ preto: rgba(14, 15, 25, 1);
          <p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua música favorita"></textarea></p>
      </fieldset>
 
-     <input type="image" name="tEnviar" id= "cEnviar" src="imagens/icone-enviar.png"> <!--Campo de entrada de tipo imagem para inserção do ícone de envio-->
+     <input type="image" name="tEnviar" id= "cEnviar" class= "enviar" src="imagens/icone-enviar.png" style="padding: 2px;
+     width: 5%;
+     height: 5%;
+     position: relative;
+     right: 0;">
      </form>
 </section>
 

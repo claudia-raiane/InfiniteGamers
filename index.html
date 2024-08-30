@@ -22,12 +22,12 @@ preto: rgba(14, 15, 25, 1);
         src: url("fontes/bubblegum-sans-regular.otf")
     }
 
-    /*Estilização do corpo da página*/
-    body {
-        background-color: #CAD2C5;
-        color: rgba(0, 0, 0 1);
-        font-family: arial, sans-serif;
-    }
+ /*Estilização do corpo do HTML*/
+ body {
+    background-color:rgba(243, 223, 162, 1);
+    color: rgba(14, 15, 25, 1);
+    font-family: arial, sans-serif;
+}
 
     /*Estilização para os parágrafos da página*/
     p {
@@ -52,15 +52,14 @@ preto: rgba(14, 15, 25, 1);
         padding: 15px;
     }
 
-    /*Estilização da segunda imagem presente no cabeçalho*/
-    header#cabecalho img#icone {
-        position: absolute;
-        height: 20%;
-        width: 25%;
+     /*Estilização da segunda imagem presente no cabeçalho*/
+     header#cabecalho img#icone {
+        position: absolute; 
+        height: 2.5%;
+        width: 5%;
         left: 880px;
-        top: -10px;
+        top: 60px;
     }
-
     /*Estilização do cabeçalho em si*/
     header#cabecalho {
         height: 150px;
@@ -77,54 +76,47 @@ preto: rgba(14, 15, 25, 1);
         margin-bottom: 0px;
         text-align: center;
     }
+ /*Formatação do Menu*/
+ nav#menu {
+    display: block;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; 
+    top: 40px;
+    left: 200px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color:rgba(111, 138, 183, 1);;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu li:hover {
+    background-color: rgba(78, 20, 140, 1);
+    text-decoration: underline;
+}
+nav#menu h1{
+    display: none
+}
+nav#menu a{
+    color:rgba(14, 15, 25, 1);
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: #ffff;
+}
 
-    /*Formatação do Menu*/
-    nav#menu {
-        display: block;
-    }
+a {
+    color: #606060;
+    text-decoration: none;
+}
 
-    nav#menu ul {
-        list-style: none;
-        text-transform: uppercase;
-        position: absolute;
-        top: 40px;
-        left: 200px;
-    }
-
-    nav#menu li {
-        display: inline-block;
-        background-color: #84A98C;
-        padding: 10px;
-        margin: 2px;
-        transition: background-color 1s;
-    }
-
-    nav#menu li:hover {
-        background-color: #52796F;
-        text-decoration: underline;
-    }
-
-    nav#menu h1 {
-        display: none
-    }
-
-    nav#menu a {
-        color: #2F3E46;
-        text-decoration: none;
-    }
-
-    nav#menu a:hover {
-        color: #ffff;
-    }
-
-    a {
-        color: #606060;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
+a:hover {
+    text-decoration: underline;
+}
 
     /*Formatação da tag section com id corpo no HTML, incluindo a configuração para proporcionar a divisão do conteúdo em colunas*/
     section#corpo {
@@ -184,62 +176,25 @@ preto: rgba(14, 15, 25, 1);
             <img id="logo" src=""
                 alt='logo da loja' >
             <!--Primeira imagem solicitada-->
-            <img id="icone" src="imagens/icone-notas.png"
-                alt="imagem no canto direito de notas musicais como em uma partitura"><!--Segunda imagem solicitada-->
+            <img id="icone" src="imagens/icone-carrinho.png" alt="imagem de um símbolo retratando a comunicação do desenvolvedor com o meio virtual (usuários)"><!--Segunda imagem solicitada-->
             <nav id="menu"> <!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
                 <ul type="disc"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Consoles</a></li>
-                    <li><a href="estilos.html">Jogos</a></li>
-                    <li><a href="midia.html">Serviços</a></li>
-                    <li><a href="contato.html">Fale conosco</a></li>
-                </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="games.html">Jogos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Fale conosco</a></li>
+        </ul>
             </nav>
         </header>
         <section id='corpo'>
-            <article id="noticia-principal">
-                <!--Para inserir o conteúdo principal, foram criadas as tag's section e article-->
-                <!--Essa página tem como intuito principal apresentar conceitos básicos sobre a temática do website: a música-->
-                <h1><!--Tag de formatação de texto para itálico e mudança da fonte--><i>Saiba tudo sobre o mundo
-                        musical!</i></h1><!--Primeiro título inserido-->
-
-                <h2><!--Segunda formatação de texto--><u>➞ Mas afinal...O que é a música?</u></h2>
-                <!--Segunda formatação de título-->
-                <p>Música é a combinação de ritmo, harmonia e melodia, de maneira agradável ao ouvido. No sentido amplo
-                    é a organização temporal de sons e silêncios (pausas). No sentido restrito, é a arte de coordenar e
-                    transmitir efeitos sonoros, harmoniosos e esteticamente válidos, podendo ser transmitida através da
-                    voz ou de instrumentos musicais.</p>
-                <img src="imagens/icone-emoji.png" alt="emoji de whatsapp pensando"
-                    style="height: 50%;width: 50%; margin-left: 120px;"><!--Terceira imagem solicitada-->
-                <br>
-
-                <h2><u>➞ A origem da música</u></h2><!--Formatação de título e texto-->
-                <p>A música existe e sempre existiu como produção cultural, pois de acordo com estudos científicos,
-                    desde que o ser humano começou a se organizar em tribos primitivas pela África, a música era parte
-                    integrante do cotidiano dessas pessoas. Acredita-se que a música tenha surgido há 50.000 anos, onde
-                    as primeiras manifestações tenham sido feitas no continente africano, expandindo-se pelo mundo com o
-                    dispersar da raça humana pelo planeta. A música, ao ser produzida e/ou reproduzida, é influenciada
-                    diretamente pela organização sociocultural e econômica local, contando ainda com as características
-                    climáticas e o acesso tecnológico que envolvem toda a relação com a linguagem musical. A música
-                    possui a capacidade estética de traduzir os sentimentos, atitudes e valores culturais de um povo ou
-                    nação. A música é uma linguagem local e global.</p>
-                <br>
+            <h1>nome da loja</h1>
+            <p>Seja bem-vindo à nossa loja virtual! Aqui você encontra os melhores produtos para gamers, desde consoles até jogos. Aproveite nossas promoções e faça já a sua compra!</p>
+            <article id='noticia-principal'>
+                <h2>Consoles</h2>
+                <p>Confira os melhores consoles do mercado, com preços acessíveis e condições de pagamento facilitadas. Aproveite nossas promoções e adquira já o seu!</p>
             </article>
         </section>
-
-        <!--Inserção da tag aside juntamente ao id lateral para estilização e divisão do corpo do site em colunas-->
-        <aside id="lateral">
-            <h2><u>➞ A música na contemporaneidade</u></h2><!--Formatação de título e texto-->
-            <p>O século XX é marcado por uma série de novas tendências e técnicas musicais, no entanto torna-se
-                imprudente rotular criações que ainda encontra-se em curso. Porém algumas tendências e técnicas
-                importantes já se estabeleceram no decorrer do século XX. São elas: Impressionismo, Nacionalismo do
-                século XX, Influências jazzísticas, Politonalidade, Atonalidade, Expressionismo, Pontilhismo,
-                Serialismo, Neoclassicismo, Microtonalidade, Música concreta, Música eletrônica, Serialismo total, e
-                Música Aleatória. Isto sem contar na especificidade de cada cultura. Há também os músicos que criaram um
-                estilo característico e pessoal, não se inserindo em classificações ou rótulos, restando-lhes apenas o
-                adicional “tradicionalista”.</p>
-        </aside>
-
         <!--Criação do footer para, semanticamente, adicionar um rodapé no website-->
         <footer id="rodape">
             <!--Formatação de texto em HTML além disso parágrafo centralizado por meio de css inline-->

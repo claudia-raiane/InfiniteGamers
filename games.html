@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+    <title>Jogos</title>
 <style>
     /*Inserção de nova fonte baixada externamente*/
     @font-face {
@@ -12,12 +12,12 @@
         src: url("fontes/bubblegum-sans-regular.otf")
     }
 
-    /*Estilização do corpo da página*/
-    body {
-        background-color:#CAD2C5;
-        color: rgba(0,0,0 1); 
-        font-family: arial, sans-serif;
-    }
+   /*Estilização do corpo do HTML*/
+   body {
+    background-color:rgba(243, 223, 162, 1);
+    color: rgba(14, 15, 25, 1);
+    font-family: arial, sans-serif;
+}
 
     /*Estilização para os parágrafos da página*/
     p {
@@ -43,13 +43,13 @@
         padding: 15px;
     }
 
-    /*Estilização da segunda imagem presente no cabeçalho*/
-    header#cabecalho img#icone {
+     /*Estilização da segunda imagem presente no cabeçalho*/
+     header#cabecalho img#icone {
         position: absolute; 
-        height: 5%;
-        width: 15%;
+        height: 2.5%;
+        width: 5%;
         left: 880px;
-        top: 10px;
+        top: 60px;
     }
     
     /*Estilização do cabeçalho em si*/
@@ -82,20 +82,20 @@
     }
     nav#menu li {
         display: inline-block;
-        background-color: #84A98C;
+        background-color:rgba(111, 138, 183, 1);;
         padding: 10px;
         margin: 2px;
         transition: background-color 1s;
     }
     nav#menu li:hover {
-        background-color: #52796F;
+        background-color: rgba(78, 20, 140, 1);
         text-decoration: underline;
     }
     nav#menu h1{
         display: none
     }
     nav#menu a{
-        color: #2F3E46;
+        color:rgba(14, 15, 25, 1);
         text-decoration: none;
     }
     nav#menu a:hover {
@@ -163,13 +163,13 @@
 <!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
     <header id = "cabecalho">
         <img id="logo" src=""  alt='logo da loja'><!--Primeira imagem solicitada-->
-        <img id="icone" src="imagens/icone-lupa.png" alt="imagem de uma lupa remetendo à 'busca'"><!--Segunda imagem solicitada-->
+        <img id="icone" src="imagens/icone-carrinho.png" alt="imagem de um símbolo retratando a comunicação do desenvolvedor com o meio virtual (usuários)"><!--Segunda imagem solicitada-->
         <nav id="menu"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
             <ul type="disc"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
                 <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Consoles</a></li>
-                <li><a href="estilos.html">Jogos</a></li>
-                <li><a href="midia.html">Serviços</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="games.html">Jogos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="contato.html">Fale conosco</a></li>
             </ul>
         </nav>
