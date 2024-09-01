@@ -15,6 +15,12 @@ preto: rgba(14, 15, 25, 1);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nome da loja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 <style>
     /*Inserção de nova fonte baixada externamente*/
     @font-face {
@@ -51,15 +57,15 @@ preto: rgba(14, 15, 25, 1);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
         padding: 15px;
     }
-
      /*Estilização da segunda imagem presente no cabeçalho*/
      header#cabecalho img#icone {
         position: absolute; 
-        height: 2.5%;
+        height: 6.5%;
         width: 5%;
         left: 880px;
         top: 60px;
     }
+
     /*Estilização do cabeçalho em si*/
     header#cabecalho {
         height: 150px;
@@ -130,8 +136,8 @@ a:hover {
     /*Formatação das tag's h2 presentes na tag article com id noticia-principal*/
     article#noticia-principal h2 {
         font-size: 13pt;
-        color: #354F52;
-        background-color: #CAD2C5;
+        color: rgba(78, 20, 140, 1);
+        background-color:  rgba(202, 229, 255, 1);
         padding: 5px 0px 5px 10px;
         margin: 10px 0px 10px 0px;
     }
@@ -141,7 +147,7 @@ a:hover {
         display: block;
         width: 400px;
         float: right;
-        background-color: #CAD2C5;
+        background-color: rgba(111, 138, 183, 1);
         padding: 10px;
         margin-top: 10px;
         box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
@@ -149,9 +155,9 @@ a:hover {
     
     /*Estilização do elemento h2 presente na tag aside de id lateral*/
     aside#lateral h2 {
-        background-color: #84A98C;
+        background-color:  rgba(202, 229, 255, 1);
         font-size: 13pt;
-        color: #ffffff;
+        color: rgba(78, 20, 140, 1);
         padding: 5px;
     }
 
@@ -191,10 +197,35 @@ a:hover {
             <h1>nome da loja</h1>
             <p>Seja bem-vindo à nossa loja virtual! Aqui você encontra os melhores produtos para gamers, desde consoles até jogos. Aproveite nossas promoções e faça já a sua compra!</p>
             <article id='noticia-principal'>
-                <h2>Consoles</h2>
+                <h2>Consoles em promoção</h2>
                 <p>Confira os melhores consoles do mercado, com preços acessíveis e condições de pagamento facilitadas. Aproveite nossas promoções e adquira já o seu!</p>
             </article>
         </section>
+        <aside id="lateral">
+            <h2>Jogos em promoção</h2>
+            <p>Confira os jogos mais populares da loja, com preços acessíveis e condições de pagamento facilitadas. Aproveite e compre já o seu!</p>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" padding="2px">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="imagens/icone-contato.png" class="w-100 h-50" >
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="imagens/icone-carrinho.png" class="w-100 h-50">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="imagens/icone-contato.png" class="w-100 h-50">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </aside>
         <!--Criação do footer para, semanticamente, adicionar um rodapé no website-->
         <footer id="rodape">
             <!--Formatação de texto em HTML além disso parágrafo centralizado por meio de css inline-->
