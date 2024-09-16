@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consoles</title>
+    <title>Catálogo</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
 <style>
     /*Inserção de nova fonte baixada externamente*/
     @font-face {
@@ -161,12 +162,12 @@
 <div id="interface">
 <!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
 <header id = "cabecalho">
-    <img id="logo" src=""  alt='logo da loja'><!--Primeira imagem solicitada-->
+    <img id="logo" src="imagens/logo.png"  alt='logo da loja'><!--Primeira imagem solicitada-->
     <nav id="menu"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
         <ul type="disc"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
             <li><a href="index.html">Home</a></li>
-            <li><a href="consoles.html">Consoles</a></li>
-            <li><a href="games.html">Jogos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="servicos.html">Serviços</a></li>
             <li><a href="contato.html">Fale conosco</a></li>
         </ul>
@@ -176,49 +177,60 @@
 <section id="principal">
 <!--Essa página tem como intuito principal apresentar um pouco sobre os diferentes estilos musicais e evidenciar, por meio do uso de uma tabela, a predominância dos gêneros mais ouvidos em todo o mundo discutidos-->
 <!--Primeiro título inserido juntamente a formatação de texto (itálico)-->
-    <h1><i>Alguns dos estilos musicais mais populares e amplamente ouvidos em todo o mundo incluem o pop, o hip-hop/rap, o rock e a música eletrônica.</i></h1>
+    <h1><i>Catálogo de consoles e jogos novos disponíveis</i></h1>
 
 
-    <p>Assim como é possível observar na tabela abaixo, o Rock surgiu e se firmou nos Estados Unidos durante a década de 50, tendo rapidamente se espalhado por todo o mundo. Sua história começou com a influência cultural da música dos escravos vindos da África, na sociedade norte-americana como forma de expressão cultural e artística alcançando grandes proporções.</p>
+    <p>Se você é um amante de videogames, prepare-se para uma experiência incrível! Nosso catálogo apresenta uma seleção diversificada de jogos e consoles que vão agradar a todos os tipos de jogadores, desde os mais casuais até os mais hardcore.</p>
 
 
-<!--Inserção da tabela com o ranking de músicas muito escutadas de acordo com a época-->
-    <table id="tabelaspec">  
-    <caption>Tabela com músicas que tiveram grande sucesso<span>Jul/2023</span></caption>
-    <tr><td rowspan='5' class="ce">Década de 1960</td><td class="cd">"Hey Jude" - The Beatles (1968)</td></tr>
-    <tr><td class="cd">"Like a Rolling Stone" - Bob Dylan (1965)</td></tr>
-    <tr><td class="cd">"Respect" - Aretha Franklin (1967)</td></tr>
-    <tr><td class="cd">"I Want to Hold Your Hand" - The Beatles (1963)</td></tr>
-    <tr><td class="cd">"Good Vibrations" - The Beach Boys (1966)</td></tr>
-    <tr><td rowspan='5' class="ce">Década de 1970</td><td class="cd">"Stayin' Alive" - Bee Gees (1977)</td></tr>
-    <tr><td class="cd">"Bohemian Rhapsody" - Queen (1975)</td></tr>
-    <tr><td class="cd">"Hotel California" - Eagles (1976)</td></tr>
-    <tr><td class="cd">"Stairway to Heaven" - Led Zeppelin (1971)</td></tr>
-    <tr><td class="cd">"Imagine" - John Lennon (1971)</td></tr>
-    <tr><td rowspan="5" class="ce">Década de 1980</td><td class="cd">"Billie Jean" - Michael Jackson (1982)</td></tr>
-    <tr><td class="cd">"Like a Virgin" - Madonna (1984)</td></tr>
-    <tr><td class="cd">"Sweet Child o' Mine" - Guns N' Roses (1987)</td></tr>
-    <tr><td class="cd">"Every Breath You Take" - The Police (1983)</td></tr>
-    <tr><td class="cd">"Livin' on a Prayer" - Bon Jovi (1986)</td></tr>
-    <tr><td rowspan="5" class="ce">Década de 1990</td><td class="cd">"Smells Like Teen Spirit" - Nirvana (1991)</td></tr>
-    <tr><td class="cd">"Baby One More Time" - Britney Spears (1998)</td></tr>
-    <tr><td class="cd">"Wonderwall" - Oasis (1995)</td></tr>
-    <tr><td class="cd">"No Rain" - Blind Melon (1992)</td></tr>
-    <tr><td class="cd">"Black Hole Sun" - Soundgarden (1994)</td></tr>
-    <tr><td rowspan='5' class="ce">Década de 2000</td><td class="cd">"Hey Ya!" - OutKast (2003)</td></tr>
-    <tr><td class="cd">"Crazy in Love" - Beyoncé ft. Jay-Z (2003)</td></tr>
-    <tr><td class="cd">"Mr. Brightside" - The Killers (2004)</td></tr>
-    <tr><td class="cd">"Hot in Herre" - Nelly (2002)</td></tr>
-    <tr><td class="cd">"Clocks" - Coldplay (2002)</td></tr>
-    </table>
-
-<!--Texto marcado-->
-    <p>A banda de rock "The Beatles" está presente na tabela com duas de suas músicas. Formado por quatro jovens de Liverpool, o grupo mudou o comportamento dos cantores dentro e fora do palco, revolucionando os conceitos dos discos, apresentações, moda e composições e fazendo que os nomes de seus integrantes jamais fossem esquecidos: <mark>John Lennon, Paul McCartney, George Harrison e Ringo Starr.</mark></p>
+    <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="card h-100">
+            <h5 class="card-header">Console PS3 novo</h5>
+            <div class="card-body">
+              <p align="justify" class="card-text">
+                <img src="imagens/ps3.webp" class="w-100 h-50">
+			 </p>
+            </div>
+            <div class="card-footer">
+              <a href="miniCurso.html" class="btn btn-primary">Quero este!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card h-100">
+            <h5 class="card-header">Console PS4 novo</h5>
+            <div class="card-body">
+              <p align="justify" class="card-text">
+			    <img src="imagens/ps4.webp" class="w-100 h-50">
+			  </p>
+            </div>
+            <div class="card-footer">
+              <a href="apresCult.html" class="btn btn-primary">Quero este!</a>
+            </div>
+          </div>
+        </div>
+	  <div class="col-lg-4 col-sm-6">
+          <div class="card h-100">
+            <h5 class="card-header">Console Nintendo Switch novo</h5>
+            <div class="card-body">
+              <p align="justify" class="card-text">
+                <img src="imagens/switch.jpg" class="w-100 h-50">
+			</p>
+            </div>
+            <div class="card-footer">
+              <a href="concurso.html" class="btn btn-primary">Quero este!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<p></p>
+<p></p>
 
 </section>
 <footer id="rodape">
     <!--Formatação de texto em HTML além disso parágrafo centralizado por meio de css inline-->
-    <p style="text-align: center; font-weight: normal;">Copyright &copy; 2023 - by nome da loja <br> <a href="perfil da loja" target="_blank">Instagram</a> | <img
+    <p style="text-align: center; font-weight: normal;">Copyright &copy; 2024 - by Infinite Gamers <br> <a href="https://www.instagram.com/_infinite.gamers_/" target="_blank">Instagram</a> | <img
             id='logo-instagram' src='imagens/logo-insta.png'
             alt="logo da rede social instagram"><!--Adição de mais uma imagem na página--></p>
 </footer>

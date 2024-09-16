@@ -108,6 +108,7 @@
         width: 550px;
         float: left;
         padding-right: 15px;
+        border-right: 1px solid #606060;
     }
 
     /*Formatação das tag's h2 presentes na tag article com id noticia-principal*/
@@ -125,7 +126,6 @@
         float: right;
         background-color: #fff;
         padding: 10px;
-        border-left: 1px solid #606060;
     }
 
     /*Estilização do elemento h2 presente na tag aside de id lateral*/
@@ -153,12 +153,12 @@
 <body>
 <!--Inclusão de header semanticamente para adicionar um menu para a navegação entre as diferentes abas-->
     <header id = "cabecalho">
-        <img id="logo" src=""  alt='logo da loja'><!--Primeira imagem solicitada-->
+        <img id="logo" src="imagens/logo.png"  alt='logo da loja'><!--Primeira imagem solicitada-->
         <nav id="menu"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
             <ul type="disc"><!--Para a criação do menu foi utilizada uma lista desordenada com âncoras-->
                 <li><a href="index.html">Home</a></li>
-                <li><a href="consoles.html">Consoles</a></li>
-                <li><a href="games.html">Jogos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="contato.html">Fale conosco</a></li>
             </ul>
@@ -169,48 +169,27 @@
         <section id='corpo'>
             <article id="noticia-principal">
         <!--Primeiro título inserido-->
-        <h1><i>Sobre a origem do Website</i></h1><!--Tag de formatação de texto para itálico e mudança da fonte-->
-
-        <img id='sonix' src="" alt='logo da loja' style="text-align: center; display: block; margin: -120px auto;"><!--Terceira imagem solicitada contendo a logo do website e inclusão de css inline-->
-
-        <p>A nomenclatura dada para o website foi "SONIX" - Soundtracks, Originals, and New Inspiring eXperience. A sigla é inspirada na palavra "sonix" a qual <mark>expressa uma combinação das palavras "sound" (som) e "sonic" (sonoro)</mark>, transmitindo a ideia de uma experiência musical envolvente e inspiradora.</p><!--Tag de formatação de texto para marcado-->
-
-        <h1><i>Sobre as contribuintes do projeto</i></h1>
-        <br><img id='um' src='' alt="foto x" style="height: 50%;width: 50%; margin-left: 150px;"><br><!--Quarta imagem e inclusão de css inline-->
-
-        <p>➞ </p>
-        <h2><u>Gêneros favoritos:</u></h2><!--Formatação para sublinhado-->
-        <ul><strong><!--Formatação para negrito-->
-        </ul></strong>
-        <h2><u>Artistas favoritos:</u></h2>
-        <ol><strong>
-        </ol></strong>
+        <h1><i>Sobre a origem da loja:</i></h1><!--Tag de formatação de texto para itálico e mudança da fonte-->
+        <p></p>
+        <img id='logo da loja' src="imagens/logo.png" alt='logo da loja' style="text-align: center; display: block; margin: -120px auto;">
+        <h4><p>Para muitos jovens de baixa renda, o acesso a entretenimento de qualidade pode ser um desafio. Uma loja de jogos e consoles que ofereça opções acessíveis, como consoles seminovos e jogos de segunda mão, pode fazer uma enorme diferença na vida desses jovens.</p>
+        <p>Ao criar um ambiente acolhedor e inclusivo, a loja pode se tornar um refúgio seguro, um lugar onde os jovens possam se reunir, fazer amigos e esquecer momentaneamente os desafios que enfrentam em suas vidas diárias. Os jogos eletrônicos têm o poder de transformar vidas, especialmente entre os jovens. Eles podem:</p>
+        <ol>
+            <li>Promover a Autoestima: Ao conquistar vitórias em jogos e superar desafios, os jovens podem desenvolver uma sensação de realização e confiança em si mesmos.</li>
+            <li>Fomentar Conexões Sociais: Jogos em grupo e eventos da comunidade podem ajudar os jovens a construir relacionamentos significativos e se sentirem parte de algo maior.</li>
+            <li>Inspirar Sonhos e Aspirações: Alguns jovens podem encontrar inspiração em personagens e histórias de jogos, o que pode despertar sua imaginação e motivá-los a perseguir seus próprios sonhos</li>
+        </ol>
+    </h4>
     </article>
 </section>
 
 <aside id="lateral">
-        <img id='dois' src= 'foto y' style="height: 50%;width: 50%; margin-left: 150px;"><br><!--Quinta imagem e inclusão de css inline-->
-        <p>➞ </p>
-        <h2><u>Gêneros favoritos:</u></h2>
-        <ul><strong>
-        </ul></strong>
-        <h2><u>Artistas favoritos:</u></h2>
-        <ol><strong>
-        </ol></strong>
-        <br><br>
-        <img id='tres' src= 'foto z' style="height: 50%;width: 50%; margin-left: 150px;"><br><!--Sexta imagem e inclusão de css inline-->
-        <p>➞ </p>
-        <h2><u>Gêneros favoritos:</u></h2>
-        <ul><strong>
-            
-        </ul></strong>
-        <h2><u>Artistas favoritos:</u></h2>
-        <ol><strong>
-        </ol></strong>
+    <h1><i>Sobre os contribuintes da loja:</i></h1>
+       <p>texto equipe</p>
 </aside>
 <footer id="rodape">
     <!--Formatação de texto em HTML além disso parágrafo centralizado por meio de css inline-->
-    <p style="text-align: center; font-weight: normal;">Copyright &copy; 2023 - by nome da loja <br> <a href="perfil da loja" target="_blank">Instagram</a> | <img
+    <p style="text-align: center; font-weight: normal;">Copyright &copy; 2024 - by Infinite Gamers<br> <a href="https://www.instagram.com/_infinite.gamers_/" target="_blank">Instagram</a> | <img
             id='logo-instagram' src='imagens/logo-insta.png'
             alt="logo da rede social instagram"><!--Adição de mais uma imagem na página--></p>
 </footer>
